@@ -1,7 +1,6 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ThemeSwitch = () => {
@@ -12,7 +11,7 @@ const ThemeSwitch = () => {
 		setMounted(true);
 	}, []);
 
-	// if (!mounted) return <Image />;
+	if (!mounted) return null;
 
 	if (resolvedTheme === "dark") {
 		return <button onClick={() => setTheme("light")}>light btn</button>;
