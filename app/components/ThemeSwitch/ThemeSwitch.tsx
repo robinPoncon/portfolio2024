@@ -14,11 +14,25 @@ const ThemeSwitch = () => {
 	if (!mounted) return null;
 
 	if (resolvedTheme === "dark") {
-		return <button onClick={() => setTheme("light")}>light btn</button>;
+		return (
+			<button
+				className="rounded-md py-2 px-4 bg-customViolet hover:bg-customViolet"
+				onClick={() => setTheme("light")}
+			>
+				light btn
+			</button>
+		);
 	}
 
 	if (resolvedTheme === "light") {
-		return <button onClick={() => setTheme("dark")}>dark btn</button>;
+		return (
+			<button
+				className="border-2 rounded-md py-2 px-4 hover:bg-customViolet"
+				onClick={() => setTheme("dark")}
+			>
+				dark btn
+			</button>
+		);
 	}
 	return <div>test</div>;
 };

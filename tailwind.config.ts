@@ -10,10 +10,12 @@ const config: Config = {
 	theme: {
 		extend: {
 			backgroundColor: {
-				darkBg: "#2A1F77"
+				darkBg: "#0a071d",
+				customViolet: "#5440d1"
 			},
 			colors: {
-				customPink: "#A332A2"
+				customPink: "#A332A2",
+				customViolet: "#5440d1"
 			}
 		}
 	},
