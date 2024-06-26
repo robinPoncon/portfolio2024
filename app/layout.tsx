@@ -1,3 +1,5 @@
+import ResponsiveMenu from "./components/ResponsiveMenu/ResponsiveMenu";
+import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -12,12 +14,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			lang="fr"
 			suppressHydrationWarning
 		>
-			<body
-				className="min-h-screen mx-auto max-w-6xl flex flex-col bg-white 
-        dark:bg-darkBg"
-			>
+			<body className="bg-white dark:bg-darkBg">
 				<Providers>
 					{/* Navbar */}
+					<div className="flex justify-between">
+						<ResponsiveMenu />
+						<ThemeSwitch />
+					</div>
 					<main className="flex flex-col flex-1 max-w-6xl w-full  ">{children}</main>
 					{/* Footer */}
 				</Providers>

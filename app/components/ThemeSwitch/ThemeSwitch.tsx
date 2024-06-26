@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ThemeSwitch = () => {
@@ -16,10 +17,15 @@ const ThemeSwitch = () => {
 	if (resolvedTheme === "dark") {
 		return (
 			<button
-				className="rounded-md py-2 px-4 bg-customViolet hover:bg-customViolet"
+				className="rounded-md px-2 py-2 m-2 bg-customViolet"
 				onClick={() => setTheme("light")}
 			>
-				light btn
+				<Image
+					alt="icon light mode"
+					src="/icons/light-mode_icon.svg"
+					height={24}
+					width={24}
+				/>
 			</button>
 		);
 	}
@@ -27,10 +33,15 @@ const ThemeSwitch = () => {
 	if (resolvedTheme === "light") {
 		return (
 			<button
-				className="border-2 rounded-md py-2 px-4 hover:bg-customViolet"
+				className="rounded-md px-2 py-2 m-2 bg-customViolet"
 				onClick={() => setTheme("dark")}
 			>
-				dark btn
+				<Image
+					alt="icon dark mode"
+					src="/icons/dark-mode_icon.svg"
+					height={24}
+					width={24}
+				/>
 			</button>
 		);
 	}
