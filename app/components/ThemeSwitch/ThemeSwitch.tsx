@@ -14,37 +14,45 @@ const ThemeSwitch = () => {
 
 	if (!mounted) return null;
 
-	if (resolvedTheme === "dark") {
-		return (
-			<button
-				className="rounded-md px-2 py-2 m-2 bg-customViolet"
-				onClick={() => setTheme("light")}
-			>
-				<Image
-					alt="icon light mode"
-					src="/icons/light-mode_icon.svg"
-					height={24}
-					width={24}
-				/>
-			</button>
-		);
-	}
+	// if (resolvedTheme === "dark") {
+	// 	return (
+	// 		<button
+	// 			className="rounded-md px-3 py-2 m-2 bg-customViolet"
+	// 			onClick={() => setTheme("light")}
+	// 		>
+	// 			<Image
+	// 				alt="icon light mode"
+	// 				src="/icons/light-mode_icon.svg"
+	// 				height={24}
+	// 				width={24}
+	// 			/>
+	// 		</button>
+	// 	);
+	// }
 
-	if (resolvedTheme === "light") {
-		return (
-			<button
-				className="rounded-md px-2 py-2 m-2 bg-customViolet"
-				onClick={() => setTheme("dark")}
-			>
+	return (
+		<button
+			className="rounded-md px-2 py-2 m-2 bg-customViolet absolute top-0 right-0"
+			onClick={() => (resolvedTheme === "light" ? setTheme("dark") : setTheme("light"))}
+		>
+			{resolvedTheme === "light" ? (
 				<Image
 					alt="icon dark mode"
 					src="/icons/dark-mode_icon.svg"
 					height={24}
 					width={24}
 				/>
-			</button>
-		);
-	}
+			) : (
+				<Image
+					alt="icon light mode"
+					src="/icons/light-mode_icon.svg"
+					height={24}
+					width={24}
+				/>
+			)}
+		</button>
+	);
+
 	return <div>test</div>;
 };
 

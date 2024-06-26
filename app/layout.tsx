@@ -17,10 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className="bg-white dark:bg-darkBg">
 				<Providers>
 					{/* Navbar */}
-					<div className="flex justify-between">
-						<ResponsiveMenu />
-						<ThemeSwitch />
-					</div>
+					<ResponsiveMenu />
+					<ThemeSwitch />
 					<main className="flex flex-col flex-1 max-w-6xl w-full  ">{children}</main>
 					{/* Footer */}
 				</Providers>
