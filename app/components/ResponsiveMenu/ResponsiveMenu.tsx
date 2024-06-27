@@ -33,50 +33,56 @@ const ResponsiveMenu = () => {
 					/>
 				)}
 			</button>
-			<nav>
-				<ul>
-					<li onClick={() => setIsMenuOpen(false)}>
-						<Link
-							className={` text-xl ${isActiveLink("/") ? "italic" : ""}`}
-							href="/"
-						>
-							Accueil
-						</Link>
-					</li>
-					<li onClick={() => setIsMenuOpen(false)}>
-						<Link
-							className={` text-xl ${isActiveLink("/competences") ? "italic" : ""}`}
-							href="/competences"
-						>
-							Compétences
-						</Link>
-					</li>
-					<li onClick={() => setIsMenuOpen(false)}>
-						<Link
-							className={` text-xl ${isActiveLink("/projets") ? "italic" : ""}`}
-							href="/projets"
-						>
-							Projets
-						</Link>
-					</li>
-					<li onClick={() => setIsMenuOpen(false)}>
-						<Link
-							className={` text-xl ${isActiveLink("/experiences") ? "italic" : ""}`}
-							href="/experiences"
-						>
-							Expériences
-						</Link>
-					</li>
-					<li onClick={() => setIsMenuOpen(false)}>
-						<Link
-							className={` text-xl ${isActiveLink("/contact") ? "italic" : ""}`}
-							href="/contact"
-						>
-							Contact
-						</Link>
-					</li>
-				</ul>
-			</nav>
+			{isMenuOpen && (
+				<nav className="fixed top-0 w-full h-full">
+					<ul>
+						<li onClick={() => setIsMenuOpen(false)}>
+							<Link
+								className={` text-xl ${isActiveLink("/") ? "italic" : ""}`}
+								href="/"
+							>
+								Accueil
+							</Link>
+						</li>
+						<li onClick={() => setIsMenuOpen(false)}>
+							<Link
+								className={` text-xl ${
+									isActiveLink("/competences") ? "italic" : ""
+								}`}
+								href="/competences"
+							>
+								Compétences
+							</Link>
+						</li>
+						<li onClick={() => setIsMenuOpen(false)}>
+							<Link
+								className={` text-xl ${isActiveLink("/projets") ? "italic" : ""}`}
+								href="/projets"
+							>
+								Projets
+							</Link>
+						</li>
+						<li onClick={() => setIsMenuOpen(false)}>
+							<Link
+								className={` text-xl ${
+									isActiveLink("/experiences") ? "italic" : ""
+								}`}
+								href="/experiences"
+							>
+								Expériences
+							</Link>
+						</li>
+						<li onClick={() => setIsMenuOpen(false)}>
+							<Link
+								className={` text-xl ${isActiveLink("/contact") ? "italic" : ""}`}
+								href="/contact"
+							>
+								Contact
+							</Link>
+						</li>
+					</ul>
+				</nav>
+			)}
 		</section>
 	);
 };
