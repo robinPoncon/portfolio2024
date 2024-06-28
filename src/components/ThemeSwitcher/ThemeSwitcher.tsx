@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const ThemeSwitch = () => {
+const ThemeSwitcher = () => {
 	const [mounted, setMounted] = useState(false);
 	const { setTheme, resolvedTheme } = useTheme();
 
@@ -13,22 +13,6 @@ const ThemeSwitch = () => {
 	}, []);
 
 	if (!mounted) return null;
-
-	// if (resolvedTheme === "dark") {
-	// 	return (
-	// 		<button
-	// 			className="rounded-md px-3 py-2 m-2 bg-customViolet"
-	// 			onClick={() => setTheme("light")}
-	// 		>
-	// 			<Image
-	// 				alt="icon light mode"
-	// 				src="/icons/light-mode_icon.svg"
-	// 				height={24}
-	// 				width={24}
-	// 			/>
-	// 		</button>
-	// 	);
-	// }
 
 	return (
 		<button
@@ -52,8 +36,6 @@ const ThemeSwitch = () => {
 			)}
 		</button>
 	);
-
-	return <div>test</div>;
 };
 
-export default ThemeSwitch;
+export default ThemeSwitcher;

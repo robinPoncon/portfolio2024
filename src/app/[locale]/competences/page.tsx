@@ -1,7 +1,7 @@
 const SkillPage = () => {
 	return (
 		<section>
-			<h1>Page de compétences</h1>
+			<h1 className="bg-customViolet">Page de compétences</h1>
 		</section>
 	);
 };

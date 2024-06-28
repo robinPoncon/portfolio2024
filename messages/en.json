@@ -1,0 +1,13 @@
+{
+	"Index": {
+		"title": "Hello world !"
+	},
+
+	"Menu": {
+		"home": "Home",
+		"skills": "Skills",
+		"projects": "Projects",
+		"experiences": "Experiences",
+		"contact": "Contact"
+	}
+}

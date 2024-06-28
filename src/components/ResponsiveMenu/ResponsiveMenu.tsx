@@ -5,7 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const ResponsiveMenu = () => {
+type ResponsiveMenuProps = {
+	locale: string;
+};
+
+const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const isActiveLink = (path: string) => {
@@ -49,7 +53,7 @@ const ResponsiveMenu = () => {
 								className={` text-xl ${
 									isActiveLink("/competences") ? "italic" : ""
 								}`}
-								href="/competences"
+								href={`/${locale}/competences`}
 							>
 								Compétences
 							</Link>
@@ -57,7 +61,7 @@ const ResponsiveMenu = () => {
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
 								className={` text-xl ${isActiveLink("/projets") ? "italic" : ""}`}
-								href="/projets"
+								href={`/${locale}/projets`}
 							>
 								Projets
 							</Link>
@@ -67,7 +71,7 @@ const ResponsiveMenu = () => {
 								className={` text-xl ${
 									isActiveLink("/experiences") ? "italic" : ""
 								}`}
-								href="/experiences"
+								href={`/${locale}/experiences`}
 							>
 								Expériences
 							</Link>
@@ -75,7 +79,7 @@ const ResponsiveMenu = () => {
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
 								className={` text-xl ${isActiveLink("/contact") ? "italic" : ""}`}
-								href="/contact"
+								href={`/${locale}/contact`}
 							>
 								Contact
 							</Link>
