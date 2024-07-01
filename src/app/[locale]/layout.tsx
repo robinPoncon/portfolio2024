@@ -3,7 +3,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
-import { useTranslations } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 export const metadata = {
 	title: "Portfolio Robin Ponçon",
@@ -15,8 +16,8 @@ interface RootLayoutProps {
 	params: { locale: string };
 }
 
-export default function RootLayout({ children, params: { locale } }: RootLayoutProps) {
-	const t = useTranslations("Menu");
+export default async function RootLayout({ children, params: { locale } }: RootLayoutProps) {
+	const messages = await getMessages();
 
 	return (
 		<html
@@ -24,14 +25,17 @@ export default function RootLayout({ children, params: { locale } }: RootLayoutP
 			suppressHydrationWarning
 		>
 			<body className="bg-white dark:bg-darkBg">
-				<Providers>
-					{/* Navbar */}
-					<ResponsiveMenu locale={locale} />
-					<ThemeSwitcher />
-					<LocaleSwitcher />
-					<main className="flex flex-col flex-1 max-w-6xl w-full  ">{children}</main>
-					{/* Footer */}
-				</Providers>
+				<NextIntlClientProvider messages={messages}>
+					<Providers>
+						<ResponsiveMenu
+							namespace="Menu"
+							locale={locale}
+						/>
+						<ThemeSwitcher />
+						<LocaleSwitcher />
+						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>
+					</Providers>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

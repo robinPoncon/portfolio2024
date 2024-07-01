@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -7,10 +8,15 @@ import { useState } from "react";
 
 type ResponsiveMenuProps = {
 	locale: string;
+	namespace: string;
 };
 
-const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
+const ResponsiveMenu = ({ locale, namespace }: ResponsiveMenuProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const t = useTranslations("Menu");
+
+	console.log(t("projects"));
 
 	const isActiveLink = (path: string) => {
 		return usePathname() === path;
@@ -45,25 +51,27 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 								className={` text-xl ${isActiveLink("/") ? "italic" : ""}`}
 								href="/"
 							>
-								Accueil
+								{t("home")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
 								className={` text-xl ${
-									isActiveLink("/competences") ? "italic" : ""
+									isActiveLink(`/${t("skills_url")}`) ? "italic" : ""
 								}`}
-								href={`/${locale}/competences`}
+								href={`/${locale}/${t("skills_url")}`}
 							>
-								Compétences
+								{t("skills")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
-								className={` text-xl ${isActiveLink("/projets") ? "italic" : ""}`}
-								href={`/${locale}/projets`}
+								className={` text-xl ${
+									isActiveLink(`/${t("projects_url")}`) ? "italic" : ""
+								}`}
+								href={`/${locale}/${t("projects_url")}`}
 							>
-								Projets
+								{t("projects")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
@@ -73,7 +81,7 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 								}`}
 								href={`/${locale}/experiences`}
 							>
-								Expériences
+								{t("experiences")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>

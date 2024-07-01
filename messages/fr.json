@@ -6,8 +6,9 @@
 	"Menu": {
 		"home": "Accueil",
 		"skills": "Compétences",
+		"skills_url": "competences",
 		"projects": "Projets",
-		"experiences": "Expériences",
-		"contact": "Contact"
+		"projects_url": "projets",
+		"experiences": "Expériences"
 	}
 }
