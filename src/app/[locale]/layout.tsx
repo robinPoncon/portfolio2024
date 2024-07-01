@@ -27,10 +27,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 			<body className="bg-white dark:bg-darkBg">
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
-						<ResponsiveMenu
-							namespace="Menu"
-							locale={locale}
-						/>
+						<ResponsiveMenu locale={locale} />
 						<ThemeSwitcher />
 						<LocaleSwitcher />
 						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>

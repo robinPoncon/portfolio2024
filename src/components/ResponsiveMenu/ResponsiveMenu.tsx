@@ -8,10 +8,9 @@ import { useState } from "react";
 
 type ResponsiveMenuProps = {
 	locale: string;
-	namespace: string;
 };
 
-const ResponsiveMenu = ({ locale, namespace }: ResponsiveMenuProps) => {
+const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const t = useTranslations("Menu");
