@@ -5,7 +5,17 @@ export default createMiddleware({
 	locales: ["en", "fr"],
 
 	// Used when no locale matches
-	defaultLocale: "fr"
+	defaultLocale: "fr",
+	pathnames: {
+		"/skills": {
+			en: "/skills",
+			fr: "/competences"
+		},
+		"/projects": {
+			en: "/projects",
+			fr: "/projets"
+		}
+	}
 });
 
 export const config = {

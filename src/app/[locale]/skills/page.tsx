@@ -1,4 +1,4 @@
-const SkillPage = () => {
+const SkillsPage = () => {
 	return (
 		<section>
 			<h1 className="bg-customViolet">Page de compétences</h1>
@@ -6,4 +6,4 @@ const SkillPage = () => {
 	);
 };
 
-export default SkillPage;
+export default SkillsPage;

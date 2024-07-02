@@ -14,8 +14,8 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const t = useTranslations("Menu");
-
-	console.log(t("projects"));
+	const pathname = usePathname();
+	console.log(pathname);
 
 	const isActiveLink = (path: string) => {
 		return usePathname() === path;
@@ -55,27 +55,27 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
-								className={` text-xl ${
-									isActiveLink(`/${t("skills_url")}`) ? "italic" : ""
+								className={`text-xl ${
+									isActiveLink("/skills" || "/competences") ? "italic" : ""
 								}`}
-								href={`/${locale}/${t("skills_url")}`}
+								href={`/${locale}/skills`}
 							>
 								{t("skills")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
-								className={` text-xl ${
-									isActiveLink(`/${t("projects_url")}`) ? "italic" : ""
+								className={`text-xl ${
+									isActiveLink("/projects" || "/projets") ? "italic" : ""
 								}`}
-								href={`/${locale}/${t("projects_url")}`}
+								href={`/${locale}/projects`}
 							>
 								{t("projects")}
 							</Link>
 						</li>
 						<li onClick={() => setIsMenuOpen(false)}>
 							<Link
-								className={` text-xl ${
+								className={`text-xl ${
 									isActiveLink("/experiences") ? "italic" : ""
 								}`}
 								href={`/${locale}/experiences`}
