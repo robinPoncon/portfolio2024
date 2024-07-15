@@ -10,7 +10,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			backgroundColor: {
-				darkBg: "#0a071d",
+				darkBg: "#121212",
 				customViolet: "#5440d1",
 				customVioletLighter: "#988ce3"
 			},
@@ -18,6 +18,13 @@ const config: Config = {
 				customPink: "#A332A2",
 				customViolet: "#5440d1"
 			}
+		},
+		screens: {
+			sm: "576px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
+			"2xl": "1536px"
 		}
 	},
 	plugins: []
