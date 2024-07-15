@@ -6,6 +6,7 @@ export default function Home() {
 	return (
 		<div className="bg-white dark:bg-darkBg text-black dark:text-white">
 			<h1 className="text-2xl text-customViolet ">{t("title")}</h1>
+			<p>Test</p>
 		</div>
 	);
 }
