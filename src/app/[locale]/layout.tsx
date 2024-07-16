@@ -1,8 +1,8 @@
-import ResponsiveMenu from "../../components/ResponsiveMenu/ResponsiveMenu";
+import ResponsiveMenu from "../../_components/ResponsiveMenu/ResponsiveMenu";
 import "./globals.css";
 import { Providers } from "./providers";
-import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
-import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import ThemeSwitcher from "../../_components/ThemeSwitcher/ThemeSwitcher";
+import LocaleSwitcher from "@/_components/LocaleSwitcher/LocaleSwitcher";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -24,7 +24,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 			lang={locale}
 			suppressHydrationWarning
 		>
-			<body className="bg-white dark:bg-darkBg">
+			<body className="bg-lightBg dark:bg-darkBg">
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
 						<ResponsiveMenu locale={locale} />

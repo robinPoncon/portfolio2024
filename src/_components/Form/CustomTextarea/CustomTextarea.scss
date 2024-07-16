@@ -1,0 +1,37 @@
+.componentCustomTextarea {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	label {
+		font-size: 16px;
+		&.required:after {
+			content: " *";
+			color: #dc2626;
+		}
+	}
+	textarea {
+		border: 1.5px solid #abb0af;
+		border-radius: 6px;
+		font-size: 14px;
+		height: 38px;
+		min-height: 100px;
+		padding: 10px;
+		width: 100%;
+		&.error {
+			border: 1.5px solid #dc2626;
+			background-color: #fef9f9;
+		}
+		&.validated {
+			border: 1.5px solid #10b981;
+			background-color: #f9fefc;
+		}
+	}
+	p {
+		color: #dc2626;
+		font-size: 12px;
+		font-style: italic;
+		margin-top: -5px;
+		text-align: right;
+	}
+}
