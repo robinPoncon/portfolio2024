@@ -1,8 +1,8 @@
 "use client";
 
-import FlashMessages from "@/_components/FlashMessages/FlashMessages";
-import { FlashMessagesContextType, Message } from "@/_types/flashMessageType";
+import { FlashMessagesContextType, Message } from "@/app/_types/flashMessageType";
 import React, { ReactNode, createContext, useState } from "react";
+import FlashMessages from "../_components/FlashMessages/FlashMessages";
 
 const FlashMessagesContext = createContext<FlashMessagesContextType>({
 	messages: [],

@@ -1,8 +1,8 @@
-import ResponsiveMenu from "../../_components/ResponsiveMenu/ResponsiveMenu";
+import LocaleSwitcher from "../_components/LocaleSwitcher/LocaleSwitcher";
+import ResponsiveMenu from "../_components/ResponsiveMenu/ResponsiveMenu";
+import ThemeSwitcher from "../_components/ThemeSwitcher/ThemeSwitcher";
 import "./globals.css";
 import { Providers } from "./providers";
-import ThemeSwitcher from "../../_components/ThemeSwitcher/ThemeSwitcher";
-import LocaleSwitcher from "@/_components/LocaleSwitcher/LocaleSwitcher";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 

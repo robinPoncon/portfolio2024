@@ -1,11 +1,21 @@
-import { validatorFunction } from "../../../_utils/form";
+import { validatorFunction } from "@/app/_utils/form";
 import { FormEvent, useEffect, useState } from "react";
 
 type FormValues = {
 	name: string;
 	value: string;
 	isValidated?: boolean;
-	validator?: "authentication" | "notEmpty" | "email" | "date" | "cardNumber" | "cardDate" | "cardSecurityCode" | "password" | "iban" | "phoneNumber";
+	validator?:
+		| "authentication"
+		| "notEmpty"
+		| "email"
+		| "date"
+		| "cardNumber"
+		| "cardDate"
+		| "cardSecurityCode"
+		| "password"
+		| "iban"
+		| "phoneNumber";
 	inputRef?: string;
 }[];
 
@@ -47,12 +57,18 @@ const useCustomForm = (initialDatas: FormValues, onSubmit: (submitDatas: FormDat
 			}
 
 			if (getIndexOfInputDatas !== -1 && newFormDatas[getIndexOfInputDatas].inputRef) {
-				const getIndexInputRef = newFormDatas.findIndex((data) => data.name === newFormDatas[getIndexOfInputDatas].inputRef);
+				const getIndexInputRef = newFormDatas.findIndex(
+					(data) => data.name === newFormDatas[getIndexOfInputDatas].inputRef
+				);
 				if (getIndexInputRef !== -1) {
 					if (newFormDatas[getIndexOfInputDatas].value === "false") {
 						newFormDatas[getIndexInputRef].isValidated = true;
 					} else {
-						const getStatusInput = validatorFunction(newFormDatas[getIndexInputRef].value, null, newFormDatas[getIndexInputRef].validator);
+						const getStatusInput = validatorFunction(
+							newFormDatas[getIndexInputRef].value,
+							null,
+							newFormDatas[getIndexInputRef].validator
+						);
 						newFormDatas[getIndexInputRef].isValidated = getStatusInput.isValidated;
 					}
 				}

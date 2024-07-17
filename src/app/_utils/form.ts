@@ -1,4 +1,4 @@
-import { CustomObject, Formatters, Validators } from "@/_types/formType";
+import { CustomObject, Formatters, Validators } from "@/app/_types/formType";
 
 export const formatters: Formatters = {
 	number: (value: string) => value.replace(/[^0-9]+/, ""),

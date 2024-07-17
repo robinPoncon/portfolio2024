@@ -1,4 +1,4 @@
-import LoaderContext from "@/_context/LoaderContext";
+import LoaderContext from "@/app/_context/LoaderContext";
 import Image from "next/image";
 import { useContext } from "react";
 import "./Loader.scss";

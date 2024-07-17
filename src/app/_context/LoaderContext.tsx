@@ -1,8 +1,8 @@
 "use client";
 
-import Loader from "@/_components/Loader/Loader";
-import { LoaderContextType } from "@/_types/loaderType";
+import { LoaderContextType } from "@/app/_types/loaderType";
 import { createContext, useState, useContext, ReactNode } from "react";
+import Loader from "../_components/Loader/Loader";
 
 const LoaderContext = createContext<LoaderContextType>({
 	isLoading: false,

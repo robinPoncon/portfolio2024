@@ -2,8 +2,8 @@
 import { useContext, useEffect } from "react";
 import "./FlashMessages.scss";
 import Image from "next/image";
-import { FlashMessagesContextType, MessageType } from "@/_types/flashMessageType";
-import FlashMessagesContext from "@/_context/FlashMessagesContext";
+import { FlashMessagesContextType, MessageType } from "@/app/_types/flashMessageType";
+import FlashMessagesContext from "@/app/_context/FlashMessagesContext";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const FlashMessages = () => {

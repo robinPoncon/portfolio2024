@@ -1,12 +1,12 @@
 "use client";
 
-import { formDataToObject } from "@/_utils/form";
+import { formDataToObject } from "@/app/_utils/form";
 import { useCallback, useContext, useEffect } from "react";
-import FlashMessagesContext from "@/_context/FlashMessagesContext";
-import { useLoader } from "@/_context/LoaderContext";
-import useCustomForm from "@/_components/Form/UseCustomForm/UseCustomForm";
-import CustomTextarea from "@/_components/Form/CustomTextarea/CustomTextarea";
-import CustomInput from "@/_components/Form/CustomInput/CustomInput";
+import FlashMessagesContext from "@/app/_context/FlashMessagesContext";
+import { useLoader } from "@/app/_context/LoaderContext";
+import useCustomForm from "@/app/_components/Form/UseCustomForm/UseCustomForm";
+import CustomTextarea from "@/app/_components/Form/CustomTextarea/CustomTextarea";
+import CustomInput from "@/app/_components/Form/CustomInput/CustomInput";
 
 const ContactPage = () => {
 	const flashMessage = useContext(FlashMessagesContext);
