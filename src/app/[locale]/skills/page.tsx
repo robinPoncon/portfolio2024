@@ -1,37 +1,30 @@
-import BarChart from "@/app/_components/Charts/BarChart";
+"use client";
+
+import HorizontalBarChart from "@/app/_components/Charts/BarChart";
+import { useTranslations } from "next-intl";
 
 const SkillsPage = () => {
+	const t = useTranslations("SkillsPage");
+
 	return (
 		<section>
 			<h1>Ses compétences</h1>
 			<article>
-				<h2>Languages de Programmation</h2>
-				<p>HTML5</p>
-				<p>CSS3</p>
-				<p>SCSS</p>
-				<p>JavaScript</p>
-				<p>TypeScript</p>
-				<p>PHP</p>
-			</article>
-			<article>
-				<h2>Frameworks</h2>
-				<p>JQuery</p>
-				<p>Tailwind</p>
-				<p>React</p>
-				<p>NextJS</p>
-				<p>Twig</p>
-				<p>Symfony</p>
-			</article>
-			<article>
-				<h2>Outils</h2>
-				<p>Cypress</p>
-				<p>Figma</p>
-				<p>GitLab</p>
-				<p>Github</p>
-				<p>Jira</p>
-			</article>
-			<article>
-				<BarChart />
+				<HorizontalBarChart
+					title={t("programming-languages-expertise")}
+					labels={["HTML5", "CSS3", "SCSS", "JavaScript", "TypeScript", "PHP"]}
+					datasLabels={[90, 90, 80, 75, 50, 50]}
+				/>
+				<HorizontalBarChart
+					title={t("frameworks-expertise")}
+					labels={["Tailwind", "jQuery", "React", "NextJS", "Twig", "Symfony"]}
+					datasLabels={[80, 70, 70, 40, 60, 50]}
+				/>
+				<HorizontalBarChart
+					title={t("tools-expertise")}
+					labels={["Cypress", "Figma", "Gitlab", "Github", "Jira", "MySQL"]}
+					datasLabels={[50, 60, 50, 50, 60, 40]}
+				/>
 			</article>
 		</section>
 	);

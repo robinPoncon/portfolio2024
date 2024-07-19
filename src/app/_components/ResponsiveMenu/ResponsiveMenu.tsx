@@ -13,7 +13,7 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 
 	return (
 		<section>
-			<button className="cursor-pointer mx-2 my-1 w-fit relative z-10">
+			<button className="cursor-pointer px-2 py-1 w-fit fixed z-10 bg-lightBg dark:bg-darkBg">
 				{isMenuOpen ? (
 					<Image
 						alt="icon responsive menu"

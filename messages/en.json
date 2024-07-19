@@ -1,13 +1,15 @@
 {
-	"Index": {
-		"title": "Hello world !"
-	},
-
 	"Menu": {
 		"home": "Home",
 		"skills": "Skills",
 		"projects": "Projects",
 		"experiences": "Experiences",
 		"contact": "Contact"
+	},
+
+	"SkillsPage": {
+		"programming-languages-expertise": "Programming Languages Expertise",
+		"frameworks-expertise": "Frameworks Expertise",
+		"tools-expertise": "Tools Expertise"
 	}
 }
