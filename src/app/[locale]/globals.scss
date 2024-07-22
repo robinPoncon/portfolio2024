@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.titleFont {
+	font-family: var(--font-IBM);
+	letter-spacing: 1px;
+}

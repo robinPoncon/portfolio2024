@@ -8,8 +8,8 @@
 	},
 
 	"SkillsPage": {
-		"programming-languages-expertise": "Expertise des Langages de Programmation",
-		"frameworks-expertise": "Expertise des Frameworks",
-		"tools-expertise": "Expertise des Outils"
+		"programming-languages-expertise": "Expertise Langages de Programmation",
+		"frameworks-expertise": "Expertise Frameworks",
+		"tools-expertise": "Expertise Outils"
 	}
 }

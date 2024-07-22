@@ -30,6 +30,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 
 	const options: ChartOptions<"bar"> = {
 		indexAxis: "y" as const,
+		maintainAspectRatio: false,
 		scales: {
 			y: {
 				ticks: {
@@ -54,11 +55,13 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 		},
 		plugins: {
 			legend: {
+				position: "top",
+				align: "start",
 				labels: {
 					color: resolvedTheme === "dark" ? "#e4e5f1" : "#121212",
 					font: {
 						weight: "bold",
-						size: 16
+						size: 12
 					}
 				}
 			}
@@ -66,10 +69,12 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	};
 
 	return (
-		<Bar
-			data={data}
-			options={options}
-		/>
+		<div className="h-52">
+			<Bar
+				data={data}
+				options={options}
+			/>
+		</div>
 	);
 };
 export default HorizontalBarChart;

@@ -1,7 +1,8 @@
 import LocaleSwitcher from "../_components/LocaleSwitcher/LocaleSwitcher";
 import ResponsiveMenu from "../_components/ResponsiveMenu/ResponsiveMenu";
 import ThemeSwitcher from "../_components/ThemeSwitcher/ThemeSwitcher";
-import "./globals.css";
+import { IBM_Font } from "./fonts";
+import "./globals.scss";
 import { Providers } from "./providers";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -24,7 +25,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 			lang={locale}
 			suppressHydrationWarning
 		>
-			<body className="bg-lightBg dark:bg-darkBg">
+			<body className={`bg-lightBg dark:bg-darkBg ${IBM_Font.variable}`}>
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
 						<ResponsiveMenu locale={locale} />

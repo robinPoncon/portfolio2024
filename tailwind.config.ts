@@ -20,6 +20,9 @@ const config: Config = {
 				customViolet: "#5440d1"
 			}
 		},
+		fontFamily: {
+			sans: ["Helvetica", "sans-serif"]
+		},
 		screens: {
 			sm: "576px",
 			md: "768px",

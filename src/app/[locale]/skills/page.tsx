@@ -7,9 +7,13 @@ const SkillsPage = () => {
 	const t = useTranslations("SkillsPage");
 
 	return (
-		<section>
-			<h1>Ses compétences</h1>
-			<article>
+		<section className="mt-32 flex flex-col gap-10">
+			<h1 className="text-xl text-center titleFont">Ses compétences</h1>
+			<p>
+				Salut, c'est Devobot ! Est-ce que votre visite se passe bien ? Je vois que vous
+				aimez les choses concrètes, alors regardons ensemble ses compétences techniques !
+			</p>
+			<article className="m-2 flex flex-col gap-10">
 				<HorizontalBarChart
 					title={t("programming-languages-expertise")}
 					labels={["HTML5", "CSS3", "SCSS", "JavaScript", "TypeScript", "PHP"]}
@@ -26,6 +30,10 @@ const SkillsPage = () => {
 					datasLabels={[50, 60, 50, 50, 60, 40]}
 				/>
 			</article>
+			<p>
+				Les compétences techniques c'est bien ! Mais quel est l'humain derrière tout ça ? En
+				tant que robot je suis curieux, pas vous ?
+			</p>
 		</section>
 	);
 };
