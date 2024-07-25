@@ -21,8 +21,8 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 				label: title,
 				data: datasLabels,
 				backgroundColor: ["#988ce3"],
-				borderColor: ["#5440d1"],
-				borderWidth: 1,
+				// borderColor: ["#5440d1"],
+				borderWidth: 0,
 				borderRadius: 4
 			}
 		]
