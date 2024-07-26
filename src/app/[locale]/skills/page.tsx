@@ -13,34 +13,28 @@ const SkillsPage = () => {
 
 	const softSkillsArray = [
 		{
-			title: "Créativité",
-			description:
-				"C'est grâce à la musique qu'il a pu développé et faire confiance à sa créativité !"
+			title: t("creativity"),
+			description: t("creativity-description")
 		},
 		{
-			title: "Curiosité",
-			description:
-				"C'est dans un désir de comprendre le monde et les autres qu'il a développé sa curiosité !"
+			title: t("curiosity"),
+			description: t("curiosity-description")
 		},
 		{
-			title: "Gestion du stress",
-			description:
-				"C'est grâce à la méditation et sa capacité à prendre du recul sur une situation qu'il a développé sa capacité à gérer son stress."
+			title: t("stress-management"),
+			description: t("stress-management-description")
 		},
 		{
-			title: "Humilité",
-			description:
-				"C'est en faisant du sport qu'il s'est rendu compte qu'il y aura toujours quelqu'un meilleur que lui, et que l'humilité était une solution pour qu'il s'accepte et se voit tel qu'il est."
+			title: t("humility"),
+			description: t("humility-description")
 		},
 		{
-			title: "Communication",
-			description:
-				"C'est en travaillant avec de nombreux corps de métiers différents, qu'il a pu comprendre l'impact d'une bonne communication sur le bon déroulement d'un projet."
+			title: t("communication"),
+			description: t("communication-description")
 		},
 		{
-			title: "Autonomie",
-			description:
-				"C'est dans son ancienne entreprise, n'ayant pas eu de développeur front-end plus expérimenté que lui, qu'il a du développé son autonomie afin de trouver des solutions aux problèmes rencontrés."
+			title: t("autonomy"),
+			description: t("autonomy-description")
 		}
 	];
 
@@ -51,11 +45,8 @@ const SkillsPage = () => {
 
 	return (
 		<section className="mt-32 mx-2 flex flex-col gap-10">
-			<h1 className="text-xl text-center titleFont">Ses compétences</h1>
-			<p>
-				Salut, c'est Devobot ! Est-ce que votre visite se passe bien ? Je vois que vous
-				aimez les choses concrètes, alors regardons ensemble ses compétences techniques !
-			</p>
+			<h1 className="text-xl text-center titleFont">{t("his-skills")}</h1>
+			<p>{t("check-his-skills")}</p>
 			<article className="flex flex-col gap-10">
 				<HorizontalBarChart
 					title={t("programming-languages-expertise")}
@@ -73,10 +64,7 @@ const SkillsPage = () => {
 					datasLabels={[50, 60, 50, 50, 60, 40]}
 				/>
 			</article>
-			<p>
-				Les compétences techniques c'est bien ! Mais quel est l'humain derrière tout ça ? En
-				tant que robot je suis curieux, pas vous ?
-			</p>
+			<p>{t("check-his-soft-skills")}</p>
 			<article className="bg-customViolet text-white rounded-md p-4 flex flex-col gap-4 max-w-xl w-full mx-auto">
 				{isFrontCardShowing ? (
 					<>
@@ -88,7 +76,7 @@ const SkillsPage = () => {
 								width={32}
 							/>
 							<h2 className="text-center titleFont text-xl my-auto">
-								Ses savoir-être
+								{t("his-soft-skills")}
 							</h2>
 						</div>
 						<div className="flex flex-col gap-2 px-5">
@@ -97,13 +85,13 @@ const SkillsPage = () => {
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(0)}
 								>
-									Créativité
+									{t("creativity")}
 								</p>
 								<p
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(1)}
 								>
-									Curiosité
+									{t("curiosity")}
 								</p>
 							</div>
 							<div className="flex justify-between">
@@ -111,13 +99,13 @@ const SkillsPage = () => {
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(2)}
 								>
-									Gestion du stress
+									{t("stress-management")}
 								</p>
 								<p
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(3)}
 								>
-									Humilité
+									{t("humility")}
 								</p>
 							</div>
 							<div className="flex justify-between">
@@ -125,13 +113,13 @@ const SkillsPage = () => {
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(4)}
 								>
-									Communication
+									{t("communication")}
 								</p>
 								<p
 									className="cursor-pointer"
 									onClick={() => selectSkillInformation(5)}
 								>
-									Autonomie
+									{t("autonomy")}
 								</p>
 							</div>
 						</div>

@@ -10,6 +10,22 @@
 	"SkillsPage": {
 		"programming-languages-expertise": "Expertise Langages de Programmation",
 		"frameworks-expertise": "Expertise Frameworks",
-		"tools-expertise": "Expertise Outils"
+		"tools-expertise": "Expertise Outils",
+		"creativity": "Créativité",
+		"creativity-description": "C'est grâce à la musique qu'il a pu développer et faire confiance à sa créativité !",
+		"curiosity": "Curiosité",
+		"curiosity-description": "C'est dans un désir de comprendre le monde et les autres qu'il a développé sa curiosité !",
+		"stress-management": "Gestion du stress",
+		"stress-management-description": "C'est grâce à la méditation et sa capacité à prendre du recul sur une situation qu'il a développé sa capacité à gérer son stress.",
+		"humility": "Humilité",
+		"humility-description": "C'est en faisant du sport qu'il s'est rendu compte qu'il y aura toujours quelqu'un de meilleur que lui, et que l'humilité était une solution pour qu'il s'accepte et se voit tel qu'il est.",
+		"communication": "Communication",
+		"communication-description": "C'est en travaillant avec de nombreux corps de métiers différents, qu'il a pu comprendre l'impact d'une bonne communication sur le bon déroulement d'un projet.",
+		"autonomy": "Autonomie",
+		"autonomy-description": "C'est dans son ancienne entreprise, n'ayant pas eu de développeur front-end plus expérimenté que lui, qu'il a du développé son autonomie afin de trouver des solutions aux problèmes rencontrés.",
+		"his-skills": "Ses compétences",
+		"check-his-skills": "Salut, c'est Devobot ! Est-ce que votre visite se passe bien ? Je vois que vous aimez les choses concrètes, alors regardons ensemble ses compétences techniques !",
+		"his-soft-skills": "Ses savoir-être",
+		"check-his-soft-skills": "Les compétences techniques c'est bien ! Mais quel est l'humain derrière tout ça ? En tant que robot je suis curieux, pas vous ?"
 	}
 }

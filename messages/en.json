@@ -10,6 +10,22 @@
 	"SkillsPage": {
 		"programming-languages-expertise": "Programming Languages Expertise",
 		"frameworks-expertise": "Frameworks Expertise",
-		"tools-expertise": "Tools Expertise"
+		"tools-expertise": "Tools Expertise",
+		"creativity": "Creativity",
+		"creativity-description": "It's thanks to music that he's been able to develop and trust his creativity!",
+		"curiosity": "Curiosity",
+		"curiosity-description": "He developed his curiosity out of a desire to understand the world and others!",
+		"stress-management": "Stress management",
+		"stress-management-description": "Thanks to meditation and his ability to take a step back from a situation, he has developed his ability to manage stress.",
+		"humility": "Humility",
+		"humility-description": "It was through sport that he realized that there will always be someone better than him, and that humility was the way to accept and see himself as he is.",
+		"communication": "Communication",
+		"communication-description": "By working with many different trades, he was able to understand the impact of good communication on the smooth running of a project.",
+		"autonomy": "Autonomy",
+		"autonomy-description": "In his previous company, he didn't have a more experienced front-end developer than himself, so he had to develop his autonomy in order to find solutions to the problems he encountered.",
+		"his-skills": "His skills",
+		"check-his-skills": "Hi, it's Devobot! Is your visit going well? I can see that you like things concrete, so let's take a look at his technical skills together!",
+		"his-soft-skills": "His soft skills",
+		"check-his-soft-skills": "Technical skills are great! But who's the human behind it all? As a robot, I'm curious, aren't you?"
 	}
 }
