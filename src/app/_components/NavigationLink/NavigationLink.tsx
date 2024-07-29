@@ -46,6 +46,7 @@ const NavigationLink = ({
 			{resolvedTheme === "dark" || isActiveLink(pathnamesChecked) ? (
 				<Image
 					alt={altIcon}
+					className="my-auto"
 					src={srcIcon.darkMode}
 					width={24}
 					height={24}
@@ -54,6 +55,7 @@ const NavigationLink = ({
 			) : (
 				<Image
 					alt={altIcon}
+					className="my-auto"
 					src={srcIcon.lightMode}
 					width={24}
 					height={24}

@@ -27,5 +27,12 @@
 		"check-his-skills": "Hi, it's Devobot! Is your visit going well? I can see that you like things concrete, so let's take a look at his technical skills together!",
 		"his-soft-skills": "His soft skills",
 		"check-his-soft-skills": "Technical skills are great! But who's the human behind it all? As a robot, I'm curious, aren't you?"
+	},
+
+	"ProjectsPage": {
+		"his-projects": "His projects",
+		"check-his-projects": "Hi, it's me again, Devobot! Here you'll find the projects he's been working on. But being a perfectionist, he's only taking on one for the moment ...",
+		"roots-of-healing": "The roots of healing",
+		"discover": "Discover"
 	}
 }

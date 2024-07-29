@@ -11,7 +11,9 @@ const config: Config = {
 		extend: {
 			backgroundColor: {
 				darkBg: "#121212",
+				greyBg: "#252525",
 				lightBg: "#e4e5f1",
+				lighterBg: "#f4f5f9",
 				customViolet: "#5440d1",
 				customVioletLighter: "#988ce3"
 			},
