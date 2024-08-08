@@ -19,7 +19,8 @@ const config: Config = {
 			},
 			colors: {
 				customPink: "#A332A2",
-				customViolet: "#5440d1"
+				customViolet: "#5440d1",
+				customVioletLighter: "#988ce3"
 			}
 		},
 		fontFamily: {

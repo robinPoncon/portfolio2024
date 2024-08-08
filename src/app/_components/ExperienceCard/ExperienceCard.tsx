@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -9,7 +10,7 @@ type ExperienceCardProps = {
 	location: string;
 	description: string;
 	technos: string;
-	type: "company" | "school";
+	type: "company" | "formation";
 };
 
 const ExperienceCard = ({
@@ -21,6 +22,8 @@ const ExperienceCard = ({
 	type
 }: ExperienceCardProps) => {
 	const [descriptionDisplayed, setDescriptionDisplayed] = useState(false);
+
+	const t = useTranslations("ExperiencesCard");
 
 	return (
 		<article className="border-8 rounded-md border-customViolet flex flex-col gap-3 bg-lighterBg dark:bg-greyBg">
@@ -35,12 +38,12 @@ const ExperienceCard = ({
 			</p>
 			<h2 className="text-xl px-3">{title}</h2>
 			<p className="px-3">
-				<span className="font-semibold">Durée :</span>
+				<span className="font-semibold">{t("duration") + " :"}</span>
 				<span className="italic ml-1">{dates}</span>
 			</p>
 			<p className="px-3">
 				<span className="font-bold">
-					{type === "company" ? "Entreprise" : "Formation"} :
+					{type === "company" ? t("company") : t("formation")} :
 				</span>
 				<span className="italic ml-1">{location}</span>
 			</p>
@@ -54,7 +57,7 @@ const ExperienceCard = ({
 					className="flex w-fit mx-auto bg-customViolet rounded-md text-white px-3 py-2"
 					onClick={() => setDescriptionDisplayed(!descriptionDisplayed)}
 				>
-					<p className="my-auto">En savoir plus</p>
+					<p className="my-auto">{t("read-more")}</p>
 					<Image
 						alt="arrow down icon"
 						src={

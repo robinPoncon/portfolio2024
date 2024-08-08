@@ -1,56 +1,49 @@
 "use client";
 
 import ExperienceCard from "@/app/_components/ExperienceCard/ExperienceCard";
+import { useTranslations } from "next-intl";
 
 const ExperiencePage = () => {
+	const t = useTranslations("ExperiencesPage");
+
 	return (
 		<section className="mt-32 mx-2 flex flex-col gap-10">
-			<h1 className="text-2xl text-center titleFont">Ses expériences</h1>
+			<h1 className="text-2xl text-center titleFont">{t("his-experiences")}</h1>
 			{/* Tableau style kanban pour afficher les expériences et formations */}
 			<ExperienceCard
-				title="Développeur Front-End"
-				dates="Juillet 2023 à Aujourd'hui"
-				location="Auto-entrepreneur"
+				title={t("front-end-developper")}
+				dates={t("july2023-to-today")}
+				location={t("self-employed-contractor")}
 				type="company"
 				technos="NextJS, React, TypeScript, Tailwind"
-				description="Il a développé son auto-entreprise dans le soin énergétique et la musique
-				thérapeutique. Il s'est formé et a créé son propre site internet avec NextJS
-				pour avoir un rendu moderne, intuitif et performant pour les utilisateurs."
+				description={t("front-end-developper-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-2 mx-auto -my-10" />
 			<ExperienceCard
-				title="Développeur Fullstack"
-				dates="Février 2021 à Juillet 2023"
+				title={t("fullstack-developper")}
+				dates={t("february2021-to-july2023")}
 				location="SOAN"
 				type="company"
 				technos="React, Symfony, Typescript, SCSS, jQuery, Javascript, Twig"
-				description="Il a commencé en tant alternant développeur front (Twig,
-				JS, jQuery, SCSS) puis il a évolué en CDI en tant que
-				développeur fullstack (React/Typescript et Symfony)."
+				description={t("fullstack-developper-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-2 mx-auto -my-10" />
 			<ExperienceCard
-				title="Développeur Web Fullstack"
-				dates="Décembre 2020 à Décembre 2021"
+				title={t("fullstack-web-developper")}
+				dates={t("december2020-to-december2021")}
 				location="3W Academy"
-				type="school"
+				type="formation"
 				technos="React, Symfony, SCSS, jQuery, Javascript, Twig"
-				description="Il a commencé en tant alternant développeur front (Twig,
-				JS, jQuery, SCSS) puis il a évolué en CDI en tant que
-				développeur fullstack (React et Symfony)."
+				description={t("fullstack-web-developper-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-2 mx-auto -my-10" />
 			<ExperienceCard
-				title="Développeur Web Junior"
-				dates="Janvier 2019 à Juillet 2020"
+				title={t("junior-web-developper")}
+				dates={t("january2019-to-july2020")}
 				location="Openclassrooms"
-				type="school"
+				type="formation"
 				technos="Symfony, PHP, Twig, JavaScript, jQuery, HTML5, CSS3"
-				description="Il a créé 5 projets de sites internet durant sa formation
-				en ligne. Intégration de maquette, création d'un site
-				wordpress, création d'un site dynamique en JS avec
-				intégration d'API, création d'un blog en PHP et JS, puis
-				une refonte d'un site d'un club de basket en Symfony."
+				description={t("junior-web-developper-experience")}
 			/>
 		</section>
 	);

@@ -46,7 +46,17 @@ const SkillsPage = () => {
 	return (
 		<section className="mt-32 mx-2 flex flex-col gap-10">
 			<h1 className="text-xl text-center titleFont">{t("his-skills")}</h1>
-			<p>{t("check-his-skills")}</p>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_dead.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("hey-im-devobot")}</p>
+				<p className="mt-4">{t("check-his-skills")}</p>
+			</div>
 			<article className="flex flex-col gap-10">
 				<HorizontalBarChart
 					title={t("programming-languages-expertise")}

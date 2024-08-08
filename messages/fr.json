@@ -24,7 +24,8 @@
 		"autonomy": "Autonomie",
 		"autonomy-description": "C'est dans son ancienne entreprise, n'ayant pas eu de développeur front-end plus expérimenté que lui, qu'il a du développé son autonomie afin de trouver des solutions aux problèmes rencontrés.",
 		"his-skills": "Ses compétences",
-		"check-his-skills": "Salut, c'est Devobot ! Est-ce que votre visite se passe bien ? Je vois que vous aimez les choses concrètes, alors regardons ensemble ses compétences techniques !",
+		"hey-im-devobot": "Salut, c'est Devobot !",
+		"check-his-skills": "Est-ce que votre visite se passe bien ? Je vois que vous aimez les choses concrètes, alors regardons ensemble ses compétences techniques !",
 		"his-soft-skills": "Ses savoir-être",
 		"check-his-soft-skills": "Les compétences techniques c'est bien ! Mais quel est l'humain derrière tout ça ? En tant que robot je suis curieux, pas vous ?"
 	},
@@ -34,5 +35,29 @@
 		"check-his-projects": "Salut c'est encore moi Devobot ! Ici vous retrouverez les projets qu'il a réalisé. Mais étant perfectioniste, il n'en assume qu'un pour le moment ...",
 		"roots-of-healing": "Les racines de la guérison",
 		"discover": "Découvrir"
+	},
+
+	"ExperiencesPage": {
+		"his-experiences": "Ses expériences",
+		"front-end-developper": "Développeur Front-End",
+		"fullstack-developper": "Développeur Fullstack",
+		"fullstack-web-developper": "Développeur Web Fullstack",
+		"junior-web-developper": "Développeur Web Junior",
+		"july2023-to-today": "Juillet 2023 à Aujourd'hui",
+		"february2021-to-july2023": "Février 2021 à Juillet 2023",
+		"december2020-to-december2021": "Décembre 2020 à Décembre 2021",
+		"january2019-to-july2020": "Janvier 2019 à Juillet 2020",
+		"self-employed-contractor": "Auto-entrepreneur",
+		"front-end-developper-experience": "Il a développé son auto-entreprise dans le soin énergétique et la musique thérapeutique. Il s'est formé et a créé son propre site internet avec NextJS pour avoir un rendu moderne, intuitif et performant pour les utilisateurs.",
+		"fullstack-developper-experience": "Il a commencé en tant alternant développeur front (Twig, JS, jQuery, SCSS) puis il a évolué en CDI en tant que développeur fullstack (React/Typescript et Symfony).",
+		"fullstack-web-developper-experience": "Il a renforcé ses connaissances sur Symfony, puis il a appri React et l'a mis en place lors de la refonte du logiciel de l'entreprise où il était alternant.",
+		"junior-web-developper-experience": "Il a créé 5 projets de sites internet durant sa formation en ligne. Intégration de maquette, création d'un site wordpress, création d'un site dynamique en JS avec intégration d'API, création d'un blog en PHP et JS, puis une refonte d'un site d'un club de basket en Symfony."
+	},
+
+	"ExperiencesCard": {
+		"duration": "Durée",
+		"company": "Entreprise",
+		"formation": "Formation",
+		"read-more": "En savoir plus"
 	}
 }
