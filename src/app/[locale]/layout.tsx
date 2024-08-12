@@ -1,3 +1,4 @@
+import FixedMenu from "../_components/FixedMenu/FixedMenu";
 import LocaleSwitcher from "../_components/LocaleSwitcher/LocaleSwitcher";
 import ResponsiveMenu from "../_components/ResponsiveMenu/ResponsiveMenu";
 import ThemeSwitcher from "../_components/ThemeSwitcher/ThemeSwitcher";
@@ -28,9 +29,10 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 			<body className={`bg-lightBg dark:bg-darkBg ${IBM_Font.variable}`}>
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
-						<ResponsiveMenu locale={locale} />
+						{/* <ResponsiveMenu locale={locale} />
 						<ThemeSwitcher />
-						<LocaleSwitcher />
+						<LocaleSwitcher /> */}
+						<FixedMenu/>
 						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>
 					</Providers>
 				</NextIntlClientProvider>

@@ -9,7 +9,7 @@ const SkillsPage = () => {
 	const t = useTranslations("SkillsPage");
 
 	const [isFrontCardShowing, setIsFrontCardShowing] = useState(true);
-	const [indexSkillSelected, setIndexSkillSelected] = useState(0);
+	const [skillSelected, setSkillSelected] = useState(0);
 
 	const softSkillsArray = [
 		{
@@ -39,7 +39,7 @@ const SkillsPage = () => {
 	];
 
 	const selectSkillInformation = (index: number) => {
-		setIndexSkillSelected(index);
+		setSkillSelected(index);
 		setIsFrontCardShowing(false);
 	};
 
@@ -50,7 +50,7 @@ const SkillsPage = () => {
 				<Image
 					className="absolute -top-20 -left-14"
 					alt="robot illustration"
-					src="/illustrations/robot_dead.png"
+					src="/illustrations/robot_smile.png"
 					width={150}
 					height={150}
 				></Image>
@@ -74,7 +74,18 @@ const SkillsPage = () => {
 					datasLabels={[50, 60, 50, 50, 60, 40]}
 				/>
 			</article>
-			<p>{t("check-his-soft-skills")}</p>
+
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_smile.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("check-his-soft-skills1")}</p>
+				<p className="mt-4">{t("check-his-soft-skills2")}</p>
+			</div>
 			<article className="bg-customViolet text-white rounded-md p-4 flex flex-col gap-4 max-w-xl w-full mx-auto">
 				{isFrontCardShowing ? (
 					<>
@@ -89,48 +100,84 @@ const SkillsPage = () => {
 								{t("his-soft-skills")}
 							</h2>
 						</div>
-						<div className="flex flex-col gap-2 px-5">
+						<div className="flex flex-col gap-2 px-2">
 							<div className="flex justify-between">
-								<p
-									className="cursor-pointer"
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(0)}
 								>
-									{t("creativity")}
-								</p>
-								<p
-									className="cursor-pointer"
+									<p className="my-auto">{softSkillsArray[0].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(1)}
 								>
-									{t("curiosity")}
-								</p>
+									<p className="my-auto">{softSkillsArray[1].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
 							</div>
 							<div className="flex justify-between">
-								<p
-									className="cursor-pointer"
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(2)}
 								>
-									{t("stress-management")}
-								</p>
-								<p
-									className="cursor-pointer"
+									<p className="my-auto">{softSkillsArray[2].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(3)}
 								>
-									{t("humility")}
-								</p>
+									<p className="my-auto">{softSkillsArray[3].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
 							</div>
 							<div className="flex justify-between">
-								<p
-									className="cursor-pointer"
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(4)}
 								>
-									{t("communication")}
-								</p>
-								<p
-									className="cursor-pointer"
+									<p className="my-auto">{softSkillsArray[4].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
+								<div
+									className="cursor-pointer flex gap-1"
 									onClick={() => selectSkillInformation(5)}
 								>
-									{t("autonomy")}
-								</p>
+									<p className="my-auto">{softSkillsArray[5].title}</p>
+									<Image
+										alt="icon right arrow"
+										src="/icons/arrowForward_icon.svg"
+										width={16}
+										height={16}
+									/>
+								</div>
 							</div>
 						</div>
 					</>
@@ -145,10 +192,10 @@ const SkillsPage = () => {
 							onClick={() => setIsFrontCardShowing(true)}
 						/>
 						<h2 className="text-center titleFont text-xl my-auto">
-							{softSkillsArray[indexSkillSelected].title}
+							{softSkillsArray[skillSelected].title}
 						</h2>
 						<p className="text-center max-w-80 mx-auto">
-							{softSkillsArray[indexSkillSelected].description}
+							{softSkillsArray[skillSelected].description}
 						</p>
 					</>
 				)}

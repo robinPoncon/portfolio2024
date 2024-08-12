@@ -23,9 +23,10 @@ const LocaleSwitcher = () => {
 		<button
 			onClick={() => setIsOpenBtn(!isOpenBtn)}
 			disabled={isPending}
-			className="bg-customViolet fixed rounded-md px-2 py-2 m-2 w-fit right-0 top-12 flex flex-col gap-2"
+			className="bg-customViolet rounded-md px-2 py-2 m-2 w-fit flex flex-col gap-2 min-h-[44px]"
 		>
 			<Image
+				className="mt-[2px]"
 				alt="icon language selection"
 				src="/icons/language_icon.svg"
 				width={24}

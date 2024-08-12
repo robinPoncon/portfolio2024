@@ -24,9 +24,11 @@
 		"autonomy": "Autonomy",
 		"autonomy-description": "In his previous company, he didn't have a more experienced front-end developer than himself, so he had to develop his autonomy in order to find solutions to the problems he encountered.",
 		"his-skills": "His skills",
-		"check-his-skills": "Hi, it's Devobot! Is your visit going well? I can see that you like things concrete, so let's take a look at his technical skills together!",
+		"hey-im-devobot": "Hi, it's Devobot !",
+		"check-his-skills": "Is your visit going well? I can see that you like things concrete, so let's take a look at his technical skills together!",
 		"his-soft-skills": "His soft skills",
-		"check-his-soft-skills": "Technical skills are great! But who's the human behind it all? As a robot, I'm curious, aren't you?"
+		"check-his-soft-skills1": "Technical skills are great!",
+		"check-his-soft-skills2": "But who's the human behind it all? As a robot, I'm curious, aren't you?"
 	},
 
 	"ProjectsPage": {

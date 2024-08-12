@@ -3,17 +3,16 @@
 import Image from "next/image";
 import { useState } from "react";
 import NavigationLink from "../NavigationLink/NavigationLink";
+import { useLocale } from "next-intl";
 
-type ResponsiveMenuProps = {
-	locale: string;
-};
-
-const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
+const ResponsiveMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const locale = useLocale();
 
 	return (
 		<section>
-			<button className="cursor-pointer px-2 py-1 w-fit fixed z-10 bg-lightBg dark:bg-darkBg">
+			<button className="cursor-pointer px-2 py-1 w-fit bg-lightBg dark:bg-darkBg">
 				{isMenuOpen ? (
 					<Image
 						alt="icon responsive menu"
@@ -33,7 +32,7 @@ const ResponsiveMenu = ({ locale }: ResponsiveMenuProps) => {
 				)}
 			</button>
 			{isMenuOpen && (
-				<nav className="fixed top-0 w-full h-full bg-lightBg dark:bg-darkBg pt-12">
+				<nav className="fixed top-0 w-full h-full bg-lightBg dark:bg-darkBg pt-14 z-10">
 					<ul className="absolute left-1/2 -translate-x-1/2 flex flex-col gap-4">
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
