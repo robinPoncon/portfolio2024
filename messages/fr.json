@@ -60,5 +60,17 @@
 		"company": "Entreprise",
 		"formation": "Formation",
 		"read-more": "En savoir plus"
+	},
+
+	"ContactPage": {
+		"your-message": "Votre message",
+		"your-message-placeholder": "Exemple : J'ai une opportunité à vous proposer",
+		"your-firstname": "Votre prénom",
+		"your-firstname-placeholder": "Exemple : Dave",
+		"your-lastname": "Votre nom",
+		"your-lastname-placeholder": "Exemple : Loppeleur",
+		"your-email": "Votre email",
+		"your-email-placeholder": "Exemple : dave.loppeleur@gmail.com",
+		"send": "Envoyer"
 	}
 }

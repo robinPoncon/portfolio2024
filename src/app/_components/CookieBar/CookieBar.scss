@@ -1,0 +1,19 @@
+.cookieBarComponent {
+	background-color: #988ce3;
+	color: black;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	bottom: 0;
+	padding: 15px;
+	width: 100%;
+	z-index: 10;
+	button {
+		color: white;
+		transition: color 0.5s, text-shadow 0.5s;
+		&:hover,
+		&:active {
+			color: #5440d1;
+		}
+	}
+}

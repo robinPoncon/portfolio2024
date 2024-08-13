@@ -23,7 +23,7 @@ const LocaleSwitcher = () => {
 		<button
 			onClick={() => setIsOpenBtn(!isOpenBtn)}
 			disabled={isPending}
-			className="bg-customViolet rounded-md px-2 py-2 m-2 w-fit flex flex-col gap-2 min-h-[44px]"
+			className="relative z-10 bg-customViolet rounded-md px-2 py-2 m-2 w-fit flex flex-col gap-2 min-h-[44px]"
 		>
 			<Image
 				className="mt-[2px]"

@@ -1,7 +1,5 @@
+import CookieBar from "../_components/CookieBar/CookieBar";
 import FixedMenu from "../_components/FixedMenu/FixedMenu";
-import LocaleSwitcher from "../_components/LocaleSwitcher/LocaleSwitcher";
-import ResponsiveMenu from "../_components/ResponsiveMenu/ResponsiveMenu";
-import ThemeSwitcher from "../_components/ThemeSwitcher/ThemeSwitcher";
 import { IBM_Font } from "./fonts";
 import "./globals.scss";
 import { Providers } from "./providers";
@@ -29,11 +27,9 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 			<body className={`bg-lightBg dark:bg-darkBg ${IBM_Font.variable}`}>
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
-						{/* <ResponsiveMenu locale={locale} />
-						<ThemeSwitcher />
-						<LocaleSwitcher /> */}
-						<FixedMenu/>
+						<FixedMenu />
 						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>
+						<CookieBar />
 					</Providers>
 				</NextIntlClientProvider>
 			</body>

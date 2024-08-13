@@ -41,7 +41,7 @@ const CustomTextarea = ({
 		const validatorResult = validatorFunction(valueInput, errors, validator);
 		setErrors(validatorResult.errors);
 		setIsValidatedInput(validatorResult.isValidated);
-		returnedValue(name, valueInput, validatorResult.isValidated);
+		// returnedValue(name, valueInput, validatorResult.isValidated);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [valueInput]);
 

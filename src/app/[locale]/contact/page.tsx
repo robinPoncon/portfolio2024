@@ -1,16 +1,18 @@
 "use client";
 
-import { formDataToObject } from "@/app/_utils/form";
-import { useCallback, useContext, useEffect } from "react";
+import CustomInput from "../../_components/Form/CustomInput/CustomInput";
+import CustomTextarea from "../../_components/Form/CustomTextarea/CustomTextarea";
+import useCustomForm from "../../_components/Form/UseCustomForm/UseCustomForm";
+import { useContext, useEffect } from "react";
 import FlashMessagesContext from "@/app/_context/FlashMessagesContext";
 import { useLoader } from "@/app/_context/LoaderContext";
-import useCustomForm from "@/app/_components/Form/UseCustomForm/UseCustomForm";
-import CustomTextarea from "@/app/_components/Form/CustomTextarea/CustomTextarea";
-import CustomInput from "@/app/_components/Form/CustomInput/CustomInput";
+import { formDataToObject } from "@/app/_utils/form";
+import { useTranslations } from "next-intl";
 
 const ContactPage = () => {
 	const flashMessage = useContext(FlashMessagesContext);
 	const { isLoading, showLoader, hideLoader } = useLoader();
+	const t = useTranslations("ContactPage");
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
@@ -85,88 +87,66 @@ const ContactPage = () => {
 				name: "email",
 				value: "",
 				validator: "email"
-			},
-			{
-				name: "phoneNumber",
-				value: "",
-				validator: "phoneNumber"
 			}
 		],
 		getSubmit
 	);
 
-	const memoizedHandleChange = useCallback(handleChange, [handleChange]);
-
 	return (
 		<div className={`flex flex-col gap-16 py-20 px-4 lg:px-24 ${isLoading ? "blur-md" : ""}`}>
 			<h1 className="titleFont font-semibold text-2xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
-				Ensemble vers votre Guérison !
+				Formulaire de contact
 			</h1>
-			<p className="italic text-justify md:max-w-3xl mx-auto">
-				Je suis là pour répondre à toutes vos questions et vous fournir des informations
-				détaillées sur les différents services, accompagnements et prestations que je
-				propose. Utilisez simplement le formulaire ci-dessous pour me contacter, et je vous
-				répondrai dans les meilleurs délais !
-			</p>
 			<div className="flex flex-col gap-16 justify-between lg:flex-row">
 				<form
 					className="gap-5 flex flex-col lg:w-2/3"
 					onSubmit={handleSubmit}
 				>
 					<CustomTextarea
-						label="Votre message"
+						label={t("your-message")}
 						name="message"
-						placeholder="Exemple : Je voudrais plus de renseignements sur un soin reiki"
+						placeholder={t("your-message-placeholder")}
 						required
 						validator={formDatas[0].validator}
 						defaultValue={formDatas[0].value}
-						returnedValue={memoizedHandleChange}
+						returnedValue={handleChange}
 					/>
 					<div className="flex flex-col gap-5 xl:flex-row">
 						<CustomInput
-							label="Votre prénom"
+							label={t("your-firstname")}
 							name="firstName"
-							placeholder="Exemple : Arthur"
+							placeholder={t("your-firstname-placeholder")}
 							required
 							validator={formDatas[1].validator}
 							defaultValue={formDatas[1].value}
-							returnedValue={memoizedHandleChange}
+							returnedValue={handleChange}
 						/>
 						<CustomInput
-							label="Votre nom"
+							label={t("your-lastname")}
 							name="lastName"
-							placeholder="Exemple : Pendragon"
+							placeholder={t("your-lastname-placeholder")}
 							required
 							validator={formDatas[2].validator}
 							defaultValue={formDatas[2].value}
-							returnedValue={memoizedHandleChange}
+							returnedValue={handleChange}
 						/>
 					</div>
 					<div className="flex flex-col gap-5 xl:flex-row">
 						<CustomInput
-							label="Votre email"
+							label={t("your-email")}
 							name="email"
-							placeholder="Exemple : arthur.pendragon@gmail.com"
+							placeholder={t("your-email-placeholder")}
 							required
 							validator={formDatas[3].validator}
 							defaultValue={formDatas[3].value}
-							returnedValue={memoizedHandleChange}
-						/>
-						<CustomInput
-							label="Votre numéro de téléphone"
-							name="phoneNumber"
-							placeholder="Exemple : 0634567865"
-							required
-							validator={formDatas[4].validator}
-							defaultValue={formDatas[4].value}
-							returnedValue={memoizedHandleChange}
+							returnedValue={handleChange}
 						/>
 					</div>
 					<button
-						className={`actionBtn mt-5 ${isSubmitBtnDisabled ? "disabledBtn" : ""}`}
+						className={`bg-customViolet rounded-md px-4 py-2 w-fit mx-auto text-white ${isSubmitBtnDisabled ? "disabledBtn" : ""}`}
 						type="submit"
 					>
-						Envoyer
+						{t("send")}
 					</button>
 				</form>
 			</div>

@@ -32,7 +32,7 @@ const ResponsiveMenu = () => {
 				)}
 			</button>
 			{isMenuOpen && (
-				<nav className="fixed top-0 w-full h-full bg-lightBg dark:bg-darkBg pt-14 z-10">
+				<nav className="fixed w-full h-full bg-lightBg dark:bg-darkBg pt-10 z-10">
 					<ul className="absolute left-1/2 -translate-x-1/2 flex flex-col gap-4">
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
