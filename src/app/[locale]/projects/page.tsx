@@ -5,10 +5,20 @@ const ProjectsPage = () => {
 	const t = useTranslations("ProjectsPage");
 
 	return (
-		<section className="mt-32 mx-2 flex flex-col gap-10">
-			<h1 className="text-xl text-center titleFont">{t("his-projects")}</h1>
-			<p>{t("check-his-projects")}</p>
-			<article className="bg-lighterBg dark:bg-greyBg p-3 rounded-md flex flex-col gap-4 shadow-lg">
+		<section className="mt-32 mx-4 flex flex-col gap-10">
+			<h1 className="text-2xl text-center titleFont">{t("his-projects")}</h1>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_uncomfortable.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("its-me-again")}</p>
+				<p className="mt-2">{t("check-his-projects")}</p>
+			</div>
+			<article className="bg-lighterBg dark:bg-greyBg p-4 rounded-md flex flex-col gap-4 shadow-lg">
 				<h2 className="titleFont text-lg text-center font-bold text-customViolet">
 					{t("roots-of-healing")}
 				</h2>

@@ -55,7 +55,7 @@ const SkillsPage = () => {
 					height={150}
 				></Image>
 				<p className="pl-12">{t("hey-im-devobot")}</p>
-				<p className="mt-4">{t("check-his-skills")}</p>
+				<p className="mt-2">{t("check-his-skills")}</p>
 			</div>
 			<article className="flex flex-col gap-10">
 				<HorizontalBarChart
@@ -79,12 +79,12 @@ const SkillsPage = () => {
 				<Image
 					className="absolute -top-20 -left-14"
 					alt="robot illustration"
-					src="/illustrations/robot_smile.png"
+					src="/illustrations/robot_blink.png"
 					width={150}
 					height={150}
 				></Image>
 				<p className="pl-12">{t("check-his-soft-skills1")}</p>
-				<p className="mt-4">{t("check-his-soft-skills2")}</p>
+				<p className="mt-2">{t("check-his-soft-skills2")}</p>
 			</div>
 			<article className="bg-customViolet text-white rounded-md p-4 flex flex-col gap-4 max-w-xl w-full mx-auto">
 				{isFrontCardShowing ? (

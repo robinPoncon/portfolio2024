@@ -1,10 +1,12 @@
 {
-	"Menu": {
+	"Menu&Footer": {
 		"home": "Home",
 		"skills": "Skills",
 		"projects": "Projects",
 		"experiences": "Experiences",
-		"contact": "Contact"
+		"contact": "Contact",
+		"legal-notices": "Legal notices",
+		"data-protection": "Data protection"
 	},
 
 	"SkillsPage": {
@@ -33,7 +35,8 @@
 
 	"ProjectsPage": {
 		"his-projects": "His projects",
-		"check-his-projects": "Hi, it's me again, Devobot! Here you'll find the projects he's been working on. But being a perfectionist, he's only taking on one for the moment ...",
+		"its-me-again": "Hi, it's me again, Devobot!",
+		"check-his-projects": "Here you'll find the projects he's been working on. But being a perfectionist, he's only taking on one for the moment !",
 		"roots-of-healing": "The roots of healing",
 		"discover": "Discover"
 	},
@@ -72,5 +75,32 @@
 		"your-email": "Your email",
 		"your-email-placeholder": "Example : dave.loppeleur@gmail.com",
 		"send": "Send"
+	},
+
+	"DataProtectionPage": {
+		"data-protection": "Data protection",
+		"welcome-data-protection": "Welcome to the data protection page of the Robin website. I would like to assure you that Robin takes the privacy and security of your personal information very seriously. The purpose of this privacy policy is to inform you about how Robin collects, uses, shares and protects your data.",
+		"collecting-data": "Collection of your personal data",
+		"when-you-visit": "When you visit its website, it may collect certain personal information, including :",
+		"identification-information": "- Identification information",
+		"identification-information-description": ": Your last name, first name, e-mail address and any other contact details you choose to provide via the contact form.",
+		"navigation-data": "- Navigation data",
+		"navigation-data-description": ": Information collected automatically when you visit our site, such as your IP address, the type of browser you use, the pages you visit and how you interact with our site.",
+		"use-your-data": "Use of your personal data",
+		"use-your-data-for": "He uses the personal data collected for the following purposes :",
+		"answering-your-request": "- Responding to your requests",
+		"answering-your-request-description": ": If you contact him via his contact form, he uses your information to answer your questions or requests.",
+		"improving-his-website": "- Improving his website",
+		"improving-his-website-description": ": He may use browsing data to understand how visitors use its website and improve it accordingly.",
+		"sharing-your-data": "Sharing your data",
+		"sharing-your-data-description": "He doesn't share your personal data with third parties, except in the following cases:",
+		"legal-obligations": "- Legal obligations",
+		"legal-obligations-description": ": He may be required to disclose your information if required by law.",
+		"data-security": "Data security",
+		"data-security-description": "He takes appropriate security measures to protect your personal data against loss, unauthorized access, disclosure, alteration or destruction. However, no method of transmission over the Internet or method of electronic storage is completely secure, and he cannot guarantee the absolute security of your data.",
+		"your-rights": "Your rights",
+		"your-rights-description": "You have the right to access, rectify, delete, object to or request the portability of your personal data. To exercise these rights, or if you have any questions about our data protection policy, please contact us using the contact details provided on our website.",
+		"policy-changes": "Policy changes",
+		"policy-changes-description": "He reserves the right to update this data protection policy at any time to reflect changes in its practices or legal requirements. I encourage you to visit this page regularly to stay informed about how he protects your data."
 	}
 }

@@ -9,7 +9,6 @@ const ExperiencePage = () => {
 	return (
 		<section className="mt-32 mx-2 flex flex-col gap-10">
 			<h1 className="text-2xl text-center titleFont">{t("his-experiences")}</h1>
-			{/* Tableau style kanban pour afficher les expériences et formations */}
 			<ExperienceCard
 				title={t("front-end-developper")}
 				dates={t("july2023-to-today")}

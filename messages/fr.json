@@ -1,10 +1,12 @@
 {
-	"Menu": {
+	"Menu&Footer": {
 		"home": "Accueil",
 		"skills": "Compétences",
 		"projects": "Projets",
 		"experiences": "Expériences",
-		"contact": "Contact"
+		"contact": "Contact",
+		"legal-notices": "Mentions légales",
+		"data-protection": "Protection des données"
 	},
 
 	"SkillsPage": {
@@ -33,7 +35,8 @@
 
 	"ProjectsPage": {
 		"his-projects": "Ses projets",
-		"check-his-projects": "Salut c'est encore moi Devobot ! Ici vous retrouverez les projets qu'il a réalisé. Mais étant perfectioniste, il n'en assume qu'un pour le moment ...",
+		"its-me-again": "Salut c'est encore moi Devobot !",
+		"check-his-projects": "Ici vous trouverez les projets qu'il a réalisé. Mais étant perfectioniste, il n'en assume qu'un pour le moment !",
 		"roots-of-healing": "Les racines de la guérison",
 		"discover": "Découvrir"
 	},
@@ -72,5 +75,32 @@
 		"your-email": "Votre email",
 		"your-email-placeholder": "Exemple : dave.loppeleur@gmail.com",
 		"send": "Envoyer"
+	},
+
+	"DataProtectionPage": {
+		"data-protection": "Protection des données",
+		"welcome-data-protection": "Bienvenue sur la page dédiée à la protection de vos données sur le site web de Robin. Je tiens à vous assurer qu'il prend très au sérieux la confidentialité et la sécurité de vos informations personnelles. Cette politique de protection des données a pour but de vous informer sur la manière dont il collecte, utilise, partage et protège vos données.",
+		"collecting-data": "Collecte de vos données personnelles",
+		"when-you-visit": "Lorsque vous visitez son site web, il peut collecter certaines informations personnelles, notamment :",
+		"identification-information": "- Informations d'identification",
+		"identification-information-description": ": Votre nom, votre prénom, votre adresse email et éventuellement d'autres coordonnées que vous choisissez de lui fournir via le formulaire de contact.",
+		"navigation-data": "- Données de navigation",
+		"navigation-data-description": ": Les informations recueillies automatiquement lorsque vous visitez son site, telles que votre adresse IP, le type de navigateur que vous utilisez, les pages que vous consultez et la manière dont vous interagissez avec son site.",
+		"use-your-data": "Utilisation de vos données personnelles",
+		"use-your-data-for": "Il utilise les données personnelles collectées pour les finalités suivantes :",
+		"answering-your-request": "- Répondre à vos demandes",
+		"answering-your-request-description": ": Si vous le contactez via son formulaire de contact, il utilise vos informations pour répondre à vos questions ou demandes.",
+		"improving-his-website": "- Amélioration de son site",
+		"improving-his-website-description": ": Il peut utiliser les données de navigation pour comprendre comment les visiteurs utilisent son site et ainsi l'améliorer en conséquence.",
+		"sharing-your-data": "Partage de vos données",
+		"sharing-your-data-description": "Il ne partage pas vos données personnelles avec des tiers, sauf dans le cas suivant :",
+		"legal-obligations": "- Obligations légales",
+		"legal-obligations-description": ": Il peut être tenu de divulguer vos informations si la loi l'exige.",
+		"data-security": "Sécurité de vos données",
+		"data-security-description": "Vous avez le droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, de vous opposer au traitement ou de demander leur portabilité. Pour exercer ces droits ou poser des questions sur sa politique de protection des données, n'hésitez pas à le contacter via les coordonnées fournies sur son site.",
+		"your-rights": "Vos droits",
+		"your-rights-description": "Vous avez le droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, de vous opposer au traitement ou de demander leur portabilité. Pour exercer ces droits ou poser des questions sur ma politique de protection des données, n'hésitez pas à me contacter via les coordonnées fournies sur mon site.",
+		"policy-changes": "Modifications de la politique",
+		"policy-changes-description": "Il se réserve le droit de mettre à jour cette politique de protection des données à tout moment pour refléter les changements apportés à ses pratiques ou aux exigences légales. Je vous encourage à consulter régulièrement cette page pour rester informé(e) sur la manière dont il protège vos données."
 	}
 }

@@ -1,5 +1,6 @@
 import CookieBar from "../_components/CookieBar/CookieBar";
 import FixedMenu from "../_components/FixedMenu/FixedMenu";
+import Footer from "../_components/Footer/Footer";
 import { IBM_Font } from "./fonts";
 import "./globals.scss";
 import { Providers } from "./providers";
@@ -30,6 +31,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 						<FixedMenu />
 						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>
 						<CookieBar />
+						<Footer />
 					</Providers>
 				</NextIntlClientProvider>
 			</body>

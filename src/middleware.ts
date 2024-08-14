@@ -15,6 +15,14 @@ export default createMiddleware({
 		"/projects": {
 			en: "/projects",
 			fr: "/projets"
+		},
+		"/legal-notices": {
+			en: "/legal-notices",
+			fr: "/mentions-legales"
+		},
+		"data-protection": {
+			en: "data-protection",
+			fr: "protection-des-donnees"
 		}
 	}
 });

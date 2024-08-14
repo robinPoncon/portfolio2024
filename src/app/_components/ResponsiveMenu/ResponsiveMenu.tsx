@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import NavigationLink from "../NavigationLink/NavigationLink";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const ResponsiveMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const t = useTranslations("Menu&Footer");
 
 	const locale = useLocale();
 
@@ -36,7 +37,7 @@ const ResponsiveMenu = () => {
 					<ul className="absolute left-1/2 -translate-x-1/2 flex flex-col gap-4">
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
-							text="home"
+							text={t("home")}
 							altIcon="icon home"
 							srcIcon={{
 								lightMode: "/icons/home_icon.svg",
@@ -47,7 +48,7 @@ const ResponsiveMenu = () => {
 						/>
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
-							text="skills"
+							text={t("skills")}
 							altIcon="icon code"
 							srcIcon={{
 								lightMode: "/icons/code_icon.svg",
@@ -58,7 +59,7 @@ const ResponsiveMenu = () => {
 						/>
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
-							text="projects"
+							text={t("projects")}
 							altIcon="icon website"
 							srcIcon={{
 								lightMode: "/icons/website_icon.svg",
@@ -69,7 +70,7 @@ const ResponsiveMenu = () => {
 						/>
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
-							text="experiences"
+							text={t("experiences")}
 							altIcon="icon work case"
 							srcIcon={{
 								lightMode: "/icons/workcase_icon.svg",
@@ -80,7 +81,7 @@ const ResponsiveMenu = () => {
 						/>
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
-							text="contact"
+							text={t("contact")}
 							altIcon="icon mail"
 							srcIcon={{
 								lightMode: "/icons/mail_icon.svg",

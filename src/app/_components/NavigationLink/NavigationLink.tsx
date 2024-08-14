@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +26,7 @@ const NavigationLink = ({
 	pathnamesChecked
 }: NavigationLinkProps) => {
 	const pathname = usePathname();
-	const t = useTranslations("Menu");
+	
 	const { resolvedTheme } = useTheme();
 
 	const isActiveLink = (path: string[]) => {
@@ -66,7 +65,7 @@ const NavigationLink = ({
 				className="text-xl"
 				href={href}
 			>
-				{t(text)}
+				{text}
 			</Link>
 		</li>
 	);

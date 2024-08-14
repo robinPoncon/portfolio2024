@@ -15,12 +15,15 @@ const config: Config = {
 				lightBg: "#e4e5f1",
 				lighterBg: "#f4f5f9",
 				customViolet: "#5440d1",
-				customVioletLighter: "#988ce3"
+				customVioletLighter: "#988ce3",
+				footerBg: "#0f0b2c"
 			},
 			colors: {
 				customPink: "#A332A2",
 				customViolet: "#5440d1",
-				customVioletLighter: "#988ce3"
+				customVioletLighter: "#988ce3",
+				lightBg: "#e4e5f1",
+				lighterBg: "#f4f5f9"
 			}
 		},
 		fontFamily: {
