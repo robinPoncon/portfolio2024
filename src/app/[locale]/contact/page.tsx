@@ -93,7 +93,7 @@ const ContactPage = () => {
 	);
 
 	return (
-		<div className={`flex flex-col gap-16 py-20 px-4 lg:px-24 ${isLoading ? "blur-md" : ""}`}>
+		<div className={`flex flex-col gap-16 mt-32 px-4 lg:px-24 ${isLoading ? "blur-md" : ""}`}>
 			<h1 className="titleFont font-semibold text-2xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
 				Formulaire de contact
 			</h1>

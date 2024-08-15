@@ -1,12 +1,10 @@
 {
-	"Menu&Footer": {
+	"Menu": {
 		"home": "Accueil",
 		"skills": "Compétences",
 		"projects": "Projets",
 		"experiences": "Expériences",
-		"contact": "Contact",
-		"legal-notices": "Mentions légales",
-		"data-protection": "Protection des données"
+		"contact": "Contact"
 	},
 
 	"SkillsPage": {
@@ -77,6 +75,29 @@
 		"send": "Envoyer"
 	},
 
+	"LegalNotices": {
+		"legal-notices": "Mentions légales",
+		"legal-notices-description": "Il tient à vous informer de manière transparente sur les aspects juridiques de son site. Veuillez prendre quelques instants pour lire les informations suivantes.",
+		"site-manager": "Responsable du site",
+		"manager-name": "Nom du responsable",
+		"address": "Adresse",
+		"email-address": "Adresse email",
+		"hosting": "Hébergement",
+		"site-hosted-by": "Ce site est hébergé par",
+		"host-address": "Adresse de l'hébergeur",
+		"intellectual-property": "Propriété intellectuelle",
+		"intellectual-property-description": "Le contenu de ce site, y compris textes, images, vidéos, et autres éléments, est protégé par les lois sur la propriété intellectuelle. Tous les droits sont réservés. Vous n'êtes pas autorisé à reproduire, distribuer ou utiliser le contenu de ce site sans son autorisation écrite.",
+		"data-collection": "Collecte de données personnelles",
+		"data-collection-description": "Lorsque vous visitez son site, il peut collecter certaines informations personnelles conformément à la politique de protection des données. Pour plus d'informations sur la collecte et l'utilisation de vos données personnelles, veuillez vous référer à cette page",
+		"data-protection": "protection des données",
+		"responsibility": "Responsabilité",
+		"responsibility-description": "Il fait de mon mieux pour fournir des informations précises et à jour sur ce site. Cependant, il ne peut garantir l'exactitude, la pertinence ou l'exhaustivité de ces informations. En tant que visiteur, vous êtes responsable de l'utilisation que vous faites des informations présentées sur ce site.",
+		"external-links": "Liens externes",
+		"external-links-description": "Ce site peut contenir des liens vers des sites web externes. Il n'est pas responsable du contenu ou des pratiques de confidentialité de ces sites, et je vous encourage à consulter leurs propres politiques de confidentialité et mentions légales.",
+		"contact-description": "Si vous avez des questions concernant ces mentions légales ou le site en général, n'hésitez pas à le contacter à l'adresse email suivante : poncon.robin@gmail.com ou directement par le",
+		"contact-form": "formulaire de contact"
+	},
+
 	"DataProtectionPage": {
 		"data-protection": "Protection des données",
 		"welcome-data-protection": "Bienvenue sur la page dédiée à la protection de vos données sur le site web de Robin. Je tiens à vous assurer qu'il prend très au sérieux la confidentialité et la sécurité de vos informations personnelles. Cette politique de protection des données a pour but de vous informer sur la manière dont il collecte, utilise, partage et protège vos données.",
@@ -102,5 +123,18 @@
 		"your-rights-description": "Vous avez le droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, de vous opposer au traitement ou de demander leur portabilité. Pour exercer ces droits ou poser des questions sur ma politique de protection des données, n'hésitez pas à me contacter via les coordonnées fournies sur mon site.",
 		"policy-changes": "Modifications de la politique",
 		"policy-changes-description": "Il se réserve le droit de mettre à jour cette politique de protection des données à tout moment pour refléter les changements apportés à ses pratiques ou aux exigences légales. Je vous encourage à consulter régulièrement cette page pour rester informé(e) sur la manière dont il protège vos données."
+	},
+
+	"Footer": {
+		"home": "Accueil",
+		"skills": "Compétences",
+		"projects": "Projets",
+		"experiences": "Expériences",
+		"contact": "Contact",
+		"legal-notices": "Mentions légales",
+		"data-protection": "Protection des données",
+		"about": "À PROPOS",
+		"download-cv": "Télécharger le CV",
+		"all-rights-reserved": "Tous droits réservés"
 	}
 }

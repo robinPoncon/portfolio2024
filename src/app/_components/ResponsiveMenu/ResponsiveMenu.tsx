@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 const ResponsiveMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const t = useTranslations("Menu&Footer");
+	const t = useTranslations("Menu");
 
 	const locale = useLocale();
 

@@ -1,12 +1,10 @@
 {
-	"Menu&Footer": {
+	"Menu": {
 		"home": "Home",
 		"skills": "Skills",
 		"projects": "Projects",
 		"experiences": "Experiences",
-		"contact": "Contact",
-		"legal-notices": "Legal notices",
-		"data-protection": "Data protection"
+		"contact": "Contact"
 	},
 
 	"SkillsPage": {
@@ -77,6 +75,29 @@
 		"send": "Send"
 	},
 
+	"LegalNotices": {
+		"legal-notices": "Legal notices",
+		"legal-notices-description": "We would like to provide you with transparent information about the legal aspects of his site. Please take a moment to read the following information.",
+		"site-manager": "Site manager",
+		"manager-name": "Manager name",
+		"address": "Address",
+		"email-address": "Email address",
+		"hosting": "Hosting",
+		"site-hosted-by": "This site is hosted by",
+		"host-address": "Host address",
+		"intellectual-property": "Intellectual property",
+		"intellectual-property-description": "The content of this site, including texts, images, videos and other elements, is protected by intellectual property laws. All rights are reserved. You are not authorized to reproduce, distribute or use the content of this site without his written authorization.",
+		"data-collection": "Collection of personal data",
+		"data-collection-description": "When you visit his site, it may collect certain personal information in accordance with the data protection policy. For more information on the collection and use of your personal data, please refer to this page",
+		"data-protection": "data protection",
+		"responsibility": "Responsibility",
+		"responsibility-description": "He does his best to provide accurate and up-to-date information on this site. However, it cannot guarantee the accuracy, relevance or completeness of this information. As a visitor, you are responsible for your use of the information presented on this site.",
+		"external-links": "External links",
+		"external-links-description": "This site may contain links to external websites. he is not responsible for the content or privacy practices of such sites, and I encourage you to consult their own privacy policies and legal notices.",
+		"contact-description": "If you have any questions about these legal notices or the site in general, please do not hesitate to contact him at the following e-mail address: poncon.robin@gmail.com or directly at",
+		"contact-form": "contact form"
+	},
+
 	"DataProtectionPage": {
 		"data-protection": "Data protection",
 		"welcome-data-protection": "Welcome to the data protection page of the Robin website. I would like to assure you that Robin takes the privacy and security of your personal information very seriously. The purpose of this privacy policy is to inform you about how Robin collects, uses, shares and protects your data.",
@@ -102,5 +123,18 @@
 		"your-rights-description": "You have the right to access, rectify, delete, object to or request the portability of your personal data. To exercise these rights, or if you have any questions about our data protection policy, please contact us using the contact details provided on our website.",
 		"policy-changes": "Policy changes",
 		"policy-changes-description": "He reserves the right to update this data protection policy at any time to reflect changes in its practices or legal requirements. I encourage you to visit this page regularly to stay informed about how he protects your data."
+	},
+
+	"Footer": {
+		"home": "Home",
+		"skills": "Skills",
+		"projects": "Projects",
+		"experiences": "Experiences",
+		"contact": "Contact",
+		"legal-notices": "Legal notices",
+		"data-protection": "Data protection",
+		"about": "ABOUT",
+		"download-cv": "Download CV",
+		"all-rights-reserved": "All rights reserved"
 	}
 }
