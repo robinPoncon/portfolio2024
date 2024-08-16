@@ -16,7 +16,8 @@ const config: Config = {
 				lighterBg: "#f4f5f9",
 				customViolet: "#5440d1",
 				customVioletLighter: "#988ce3",
-				footerBg: "#0f0b2c"
+				footerBg: "#0f0b2c",
+				hoverBtn: "#3d2ab0"
 			},
 			colors: {
 				customPink: "#A332A2",
@@ -24,7 +25,8 @@ const config: Config = {
 				customVioletLighter: "#988ce3",
 				lightBg: "#e4e5f1",
 				lighterBg: "#f4f5f9"
-			}
+			},
+			display: ["grou-hover"]
 		},
 		fontFamily: {
 			sans: ["Helvetica", "sans-serif"]

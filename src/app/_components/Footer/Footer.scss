@@ -1,0 +1,11 @@
+.customCSS-DownloadIcon {
+	background-image: url("/icons/download-document_icon.svg");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+	margin-top: -2px;
+}
+
+.customCSS-BtnDownload:hover .customCSS-DownloadIcon {
+	background-image: url("/icons/download-document_icon_violet.svg");
+}

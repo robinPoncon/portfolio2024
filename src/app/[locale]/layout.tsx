@@ -29,7 +29,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
 						<FixedMenu />
-						<main className="flex flex-col flex-1 max-w-6xl w-full">{children}</main>
+						<main className="flex flex-col flex-1 max-w-6xl w-full mx-auto">{children}</main>
 						<CookieBar />
 						<Footer />
 					</Providers>
