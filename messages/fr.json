@@ -53,7 +53,9 @@
 		"front-end-developper-experience": "Il a développé son auto-entreprise dans le soin énergétique et la musique thérapeutique. Il s'est formé et a créé son propre site internet avec NextJS pour avoir un rendu moderne, intuitif et performant pour les utilisateurs.",
 		"fullstack-developper-experience": "Il a commencé en tant alternant développeur front (Twig, JS, jQuery, SCSS) puis il a évolué en CDI en tant que développeur fullstack (React/Typescript et Symfony).",
 		"fullstack-web-developper-experience": "Il a renforcé ses connaissances sur Symfony, puis il a appri React et l'a mis en place lors de la refonte du logiciel de l'entreprise où il était alternant.",
-		"junior-web-developper-experience": "Il a créé 5 projets de sites internet durant sa formation en ligne. Intégration de maquette, création d'un site wordpress, création d'un site dynamique en JS avec intégration d'API, création d'un blog en PHP et JS, puis une refonte d'un site d'un club de basket en Symfony."
+		"junior-web-developper-experience": "Il a créé 5 projets de sites internet durant sa formation en ligne. Intégration de maquette, création d'un site wordpress, création d'un site dynamique en JS avec intégration d'API, création d'un blog en PHP et JS, puis une refonte d'un site d'un club de basket en Symfony.",
+		"its-devobot-again": "Hey, c'est encore moi, Devobot !",
+		"career-path": "Ici pour trouverez son parcours comprenant ses expériences professionnelles ainsi que ses formations !"
 	},
 
 	"ExperiencesCard": {

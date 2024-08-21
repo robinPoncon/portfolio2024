@@ -9,6 +9,7 @@ import { cookies } from "next/headers";
 import CookieBar from "./_components/CookieBar/CookieBar";
 import Footer from "./_components/Footer/Footer";
 import Link from "next/link";
+import VerticalMenu from "./_components/VerticalMenu/VerticalMenu";
 
 export default async function NotFound() {
 	const messages = await getMessages();
@@ -27,7 +28,7 @@ export default async function NotFound() {
 			"hey-im-devobot": "Salut, C'est Devobot !",
 			"not-found": "Page introuvable !",
 			"you-are-lost":
-				"Il semble que vous vous soyez perdu dans un univers parallèle ! Cliquez sur le bouton ci-dessous pour revenir à votre précédente destination.",
+				"It seems you've lost your way in a parallel universe! Click on the button below to return to a known universe.",
 			back: "Retour à l'accueil"
 		}
 	};
@@ -37,11 +38,12 @@ export default async function NotFound() {
 			lang={selectedLocale}
 			suppressHydrationWarning
 		>
-			<body className={`bg-lightBg dark:bg-darkBg ${IBM_Font.variable}`}>
+			<body className={`bg-lightBg dark:bg-darkBg  ${IBM_Font.variable}`}>
 				<NextIntlClientProvider messages={messages}>
 					<Providers>
 						<FixedMenu />
-						<main className="pt-32 mx-2 flex flex-col gap-20">
+						<VerticalMenu />
+						<main className="pt-32 mx-2 flex flex-col gap-20 lg:ml-72">
 							<h1 className="text-2xl text-center titleFont">
 								{translations[selectedLocale]["not-found"]}
 							</h1>

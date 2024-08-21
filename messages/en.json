@@ -53,7 +53,9 @@
 		"front-end-developper-experience": "He developed his own business in energy healing and therapeutic music. He trained himself and created his own website with NextJS to make it modern, intuitive and efficient for users.",
 		"fullstack-developper-experience": "He started out as an alternating front-end developer (Twig, JS, jQuery, SCSS), then moved on to a permanent contract as a fullstack developer (React/Typescript and Symfony).",
 		"fullstack-web-developper-experience": "He strengthened his knowledge of Symfony, then learned React and used it to redesign the software of the company where he was a work-study student.",
-		"junior-web-developper-experience": "He created 5 website projects during his online training. Mock-up integration, creation of a Wordpress site, creation of a dynamic site in JS with API integration, creation of a blog in PHP and JS, then a redesign of a basketball club site in Symfony."
+		"junior-web-developper-experience": "He created 5 website projects during his online training. Mock-up integration, creation of a Wordpress site, creation of a dynamic site in JS with API integration, creation of a blog in PHP and JS, then a redesign of a basketball club site in Symfony.",
+		"its-devobot-again": "Hey, it's me again, Devobot!",
+		"career-path": "Click here to find out more about her background, including her professional experience and training!"
 	},
 
 	"ExperiencesCard": {

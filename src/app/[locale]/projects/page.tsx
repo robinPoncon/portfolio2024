@@ -5,8 +5,8 @@ const ProjectsPage = () => {
 	const t = useTranslations("ProjectsPage");
 
 	return (
-		<section className="mt-32 mx-4 flex flex-col gap-20">
-			<h1 className="text-3xl text-center titleFont">{t("his-projects")}</h1>
+		<section className="mt-32 mx-4 flex flex-col gap-20 lg:ml-72">
+			<h1 className="text-3xl text-center titleFont md:text-4xl">{t("his-projects")}</h1>
 			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
 				<Image
 					className="absolute -top-20 -left-14"
@@ -18,7 +18,7 @@ const ProjectsPage = () => {
 				<p className="pl-12">{t("its-me-again")}</p>
 				<p className="mt-2">{t("check-his-projects")}</p>
 			</div>
-			<article className="bg-lighterBg dark:bg-greyBg py-10 px-4 rounded-md flex flex-col gap-4 shadow-lg w-full max-w-3xl mx-auto">
+			<article className="bg-lighterBg dark:bg-greyBg py-10 px-4 rounded-md flex flex-col gap-4 shadow-lg w-full max-w-2xl mx-auto">
 				<h2 className="titleFont text-lg text-center font-bold text-customViolet">
 					{t("roots-of-healing")}
 				</h2>

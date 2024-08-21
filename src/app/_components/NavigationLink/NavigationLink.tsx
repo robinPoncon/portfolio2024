@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type NavigationLinkProps = {
-	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>> | undefined;
 	text: string;
 	altIcon: string;
 	srcIcon: {
@@ -26,7 +26,7 @@ const NavigationLink = ({
 	pathnamesChecked
 }: NavigationLinkProps) => {
 	const pathname = usePathname();
-	
+
 	const { resolvedTheme } = useTheme();
 
 	const isActiveLink = (path: string[]) => {
@@ -35,11 +35,11 @@ const NavigationLink = ({
 
 	return (
 		<li
-			onClick={() => setIsMenuOpen(false)}
-			className={`flex gap-2 ${
+			onClick={setIsMenuOpen ? () => setIsMenuOpen(false) : undefined}
+			className={`flex gap-2 w-fit px-2 py-1 rounded-lg ${
 				isActiveLink(pathnamesChecked)
-					? "bg-customViolet rounded-lg text-white p-2 -ml-2"
-					: ""
+					? "bg-customViolet text-white"
+					: "hover:bg-gray-300 "
 			}`}
 		>
 			{resolvedTheme === "dark" || isActiveLink(pathnamesChecked) ? (
@@ -49,7 +49,7 @@ const NavigationLink = ({
 					src={srcIcon.darkMode}
 					width={24}
 					height={24}
-					onClick={() => setIsMenuOpen(true)}
+					onClick={setIsMenuOpen ? () => setIsMenuOpen(true) : undefined}
 				/>
 			) : (
 				<Image
@@ -58,7 +58,7 @@ const NavigationLink = ({
 					src={srcIcon.lightMode}
 					width={24}
 					height={24}
-					onClick={() => setIsMenuOpen(true)}
+					onClick={setIsMenuOpen ? () => setIsMenuOpen(true) : undefined}
 				/>
 			)}
 			<Link

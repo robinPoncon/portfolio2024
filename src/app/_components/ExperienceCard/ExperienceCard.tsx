@@ -26,7 +26,7 @@ const ExperienceCard = ({
 	const t = useTranslations("ExperiencesCard");
 
 	return (
-		<article className="border-8 rounded-md border-customViolet flex flex-col gap-3 bg-lighterBg dark:bg-greyBg">
+		<article className="border-8 rounded-md border-customViolet flex flex-col gap-3 bg-lighterBg dark:bg-greyBg w-full max-w-2xl mx-auto text-center">
 			<p className="bg-customViolet py-1">
 				<Image
 					className="mx-auto"
@@ -54,7 +54,7 @@ const ExperienceCard = ({
 			{descriptionDisplayed && <p className="italic px-3 text-justify">{description}</p>}
 			<div className="mb-5">
 				<button
-					className="flex w-fit mx-auto bg-customViolet rounded-md text-white px-3 py-2"
+					className="flex w-fit mx-auto bg-customViolet rounded-md text-white px-3 py-2 hover:bg-hoverBtn hover:shadow-lg"
 					onClick={() => setDescriptionDisplayed(!descriptionDisplayed)}
 				>
 					<p className="my-auto">{t("read-more")}</p>

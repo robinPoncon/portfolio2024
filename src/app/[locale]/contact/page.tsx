@@ -93,13 +93,13 @@ const ContactPage = () => {
 	);
 
 	return (
-		<div className={`flex flex-col gap-16 mt-32 px-4 lg:px-24 ${isLoading ? "blur-md" : ""}`}>
-			<h1 className="titleFont font-semibold text-2xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
+		<div className={`flex flex-col gap-16 mt-32 px-4 lg:ml-72 ${isLoading ? "blur-md" : ""}`}>
+			<h1 className="titleFont font-semibold text-3xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
 				Formulaire de contact
 			</h1>
 			<div className="flex flex-col gap-16 justify-between lg:flex-row">
 				<form
-					className="gap-5 flex flex-col lg:w-2/3"
+					className="gap-5 flex flex-col lg:w-2/3 w-full mx-auto"
 					onSubmit={handleSubmit}
 				>
 					<CustomTextarea

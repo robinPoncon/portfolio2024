@@ -15,7 +15,7 @@ const Footer = () => {
 	};
 
 	return (
-		<section className="mt-20 bg-footerBg text-gray-400 py-10">
+		<section className="mt-20 bg-footerBg text-gray-400 py-10 relative z-30">
 			<article className="flex flex-col gap-14 lg:flex-row justify-center lg:gap-28">
 				<div className="text-center">
 					<h3 className="font-bold mb-3 text-lg">NAVIGATION</h3>
