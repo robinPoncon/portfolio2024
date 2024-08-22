@@ -16,7 +16,7 @@ const ThemeSwitcher = () => {
 
 	return (
 		<button
-			className="rounded-md px-2 py-2 mt-2 bg-customViolet h-[44px]"
+			className="rounded-md px-2 py-2 mt-2 bg-customViolet h-[44px] hover:bg-hoverBtn hover:shadow-lg"
 			onClick={() => (resolvedTheme === "light" ? setTheme("dark") : setTheme("light"))}
 		>
 			{resolvedTheme === "light" ? (

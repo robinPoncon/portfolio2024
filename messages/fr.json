@@ -7,6 +7,19 @@
 		"contact": "Contact"
 	},
 
+	"Home": {
+		"welcome-im-devobot": "Bienvenue, je suis Devobot !",
+		"i-will-be-your-guide": "Je serais votre guide durant ce voyage au travers de l'univers de Robin ! Mais qui est-il ?",
+		"job": "Métier",
+		"fullstack-developper": "Développeur Fullstack",
+		"experience": "Expérience",
+		"year": "ans",
+		"read-more": "En savoir plus",
+		"number-of-projects": "Nombre de projets réalisés",
+		"see-his-github": "Voir son github",
+		"download-cv": "Télécharger le CV de Robin"
+	},
+
 	"SkillsPage": {
 		"programming-languages-expertise": "Expertise Langages de Programmation",
 		"frameworks-expertise": "Expertise Frameworks",

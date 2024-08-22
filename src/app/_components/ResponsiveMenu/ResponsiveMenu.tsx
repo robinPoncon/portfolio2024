@@ -34,7 +34,7 @@ const ResponsiveMenu = () => {
 			</button>
 			{isMenuOpen && (
 				<nav className="fixed w-full h-full bg-lightBg dark:bg-darkBg pt-10 z-10">
-					<ul className="absolute left-1/2 -translate-x-1/2 flex flex-col gap-4">
+					<ul className="flex flex-col gap-4 mx-auto w-44">
 						<NavigationLink
 							setIsMenuOpen={setIsMenuOpen}
 							text={t("home")}

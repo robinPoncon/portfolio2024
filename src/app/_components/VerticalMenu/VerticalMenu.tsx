@@ -9,7 +9,7 @@ const VerticalMenu = () => {
 	const locale = useLocale();
 
 	return (
-		<section className="fixed pt-10 px-10 z-30 h-full hidden lg:block w-72 bg-lighterBg dark:bg-greyBg border-r-4 border-r-customVioletLighter">
+		<section className="fixed py-10 px-10 z-30 h-full hidden lg:block w-72 bg-lighterBg dark:bg-greyBg border-r-4 border-r-customVioletLighter">
 			<div className="flex">
 				<Image
 					className="-ml-5"
@@ -82,7 +82,7 @@ const VerticalMenu = () => {
 					/>
 				</ul>
 			</nav>
-			<div className="flex my-6 gap-2">
+			<div className="flex my-6 gap-2 mb-20">
 				<ThemeSwitcher />
 				<LocaleSwitcher />
 			</div>

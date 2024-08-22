@@ -28,7 +28,7 @@ export default async function NotFound() {
 			"hey-im-devobot": "Salut, C'est Devobot !",
 			"not-found": "Page introuvable !",
 			"you-are-lost":
-				"It seems you've lost your way in a parallel universe! Click on the button below to return to a known universe.",
+				"Il semblerait que vous vous soyez égaré dans un univers parallèle ! Cliquez sur le bouton ci-dessous pour revenir dans un univers connu.",
 			back: "Retour à l'accueil"
 		}
 	};
@@ -44,7 +44,7 @@ export default async function NotFound() {
 						<FixedMenu />
 						<VerticalMenu />
 						<main className="pt-32 mx-2 flex flex-col gap-20 lg:ml-72">
-							<h1 className="text-2xl text-center titleFont">
+							<h1 className="text-3xl text-center titleFont md:text-4xl">
 								{translations[selectedLocale]["not-found"]}
 							</h1>
 							<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
