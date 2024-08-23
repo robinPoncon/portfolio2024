@@ -91,7 +91,7 @@ export default function Home() {
 					</Link>
 				</div>
 				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 border-4 border-customVioletLighter">
-					<h2 className="text-lg titleFont text-center font-semibold md:mt-6">
+					<h2 className="text-lg titleFont text-center font-semibold md:mt-8">
 						{t("download-cv")}
 					</h2>
 					<div className="flex justify-center gap-10 mt-5">

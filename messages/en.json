@@ -79,6 +79,9 @@
 	},
 
 	"ContactPage": {
+		"contact-form": "Contact form",
+		"hi-its-devobot": "Hi, its Devobot again !",
+		"contact-him": "Does his world appeal to you and do you have an opportunity that matches his profile? Then send him a message!",
 		"your-message": "Your message",
 		"your-message-placeholder": "Example : I have an opportunity for you",
 		"your-firstname": "Your firstname",
@@ -87,7 +90,11 @@
 		"your-lastname-placeholder": "Example : Loppeleur",
 		"your-email": "Your email",
 		"your-email-placeholder": "Example : dave.loppeleur@gmail.com",
-		"send": "Send"
+		"send": "Send",
+		"success": "Success",
+		"success-message": "Thank you for your time! Your message has been sent, Robin will get back to you as soon as possible.",
+		"error": "Error",
+		"error-message": "An error has occurred while sending your message. Please do not hesitate to contact Robin directly by email. You'll find his email address at the bottom of the page."
 	},
 
 	"LegalNotices": {

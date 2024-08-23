@@ -1,5 +1,6 @@
 "use client";
-import { useContext, useEffect } from "react";
+
+import { useContext, useEffect, useRef } from "react";
 import "./FlashMessages.scss";
 import Image from "next/image";
 import { FlashMessagesContextType, MessageType } from "@/app/_types/flashMessageType";
@@ -8,6 +9,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const FlashMessages = () => {
 	const { messages, removeMessage } = useContext<FlashMessagesContextType>(FlashMessagesContext);
+	const nodeRef = useRef(null);
 
 	useEffect(() => {
 		let messageLength = messages[0]?.text.length || 0;
@@ -35,15 +37,19 @@ const FlashMessages = () => {
 	};
 
 	return (
-		<div className="flashMessages w-full px-4">
+		<div className="flashMessages w-full px-4 lg:ml-36">
 			<TransitionGroup>
 				{messages.map((message) => (
 					<CSSTransition
 						key={message.id}
 						timeout={750}
 						classNames="flashMessageTransition"
+						nodeRef={nodeRef}
 					>
-						<div className={`flashMessage w-full ${message.type}`}>
+						<div
+							ref={nodeRef}
+							className={`flashMessage w-full ${message.type}`}
+						>
 							<Image
 								className="mb-auto"
 								src={getIconSource(message.type)}

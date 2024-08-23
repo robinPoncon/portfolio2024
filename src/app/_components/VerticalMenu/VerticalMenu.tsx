@@ -1,15 +1,23 @@
+"use client";
+
 import { useLocale, useTranslations } from "next-intl";
 import NavigationLink from "../NavigationLink/NavigationLink";
 import Image from "next/image";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
+import { useLoader } from "@/app/_context/LoaderContext";
 
 const VerticalMenu = () => {
 	const t = useTranslations("Menu");
 	const locale = useLocale();
+	const { isLoading } = useLoader();
 
 	return (
-		<section className="fixed py-10 px-10 z-30 h-full hidden lg:block w-72 bg-lighterBg dark:bg-greyBg border-r-4 border-r-customVioletLighter">
+		<section
+			className={`fixed py-10 px-10 z-30 h-full hidden lg:block w-72 bg-lighterBg dark:bg-greyBg border-r-4 border-r-customVioletLighter ${
+				isLoading ? "blur-md" : ""
+			}`}
+		>
 			<div className="flex">
 				<Image
 					className="-ml-5"

@@ -41,26 +41,26 @@
 		gap: 10px;
 
 		&.success {
-			background-color: var(--success500);
-			border: 1.5px solid var(--success700);
-			box-shadow: 0 0 10px var(--success700);
+			background-color: #988ce3;
+			border: 1.5px solid #5440d1;
+			box-shadow: 0 0 10px #5440d1;
 		}
 
 		&.error {
-			background-color: var(--error500);
-			border: 1.5px solid var(--error700);
-			box-shadow: 0 0 10px var(--error700);
+			background-color: #f9dcdc;
+			border: 1.5px solid #dc2626;
+			box-shadow: 0 0 10px #dc2626;
 		}
 
-		&.warning {
-			background-color: var(--orange-50);
-			border: 1px solid var(--orange-200);
-		}
+		// &.warning {
+		// 	background-color: var(--orange-50);
+		// 	border: 1px solid var(--orange-200);
+		// }
 
-		&.info {
-			background-color: var(--white);
-			border: 1px solid var(--secondary-100);
-		}
+		// &.info {
+		// 	background-color: var(--white);
+		// 	border: 1px solid var(--secondary-100);
+		// }
 
 		.flashMessageContent {
 			display: flex;

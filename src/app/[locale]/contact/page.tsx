@@ -8,6 +8,8 @@ import FlashMessagesContext from "@/app/_context/FlashMessagesContext";
 import { useLoader } from "@/app/_context/LoaderContext";
 import { formDataToObject } from "@/app/_utils/form";
 import { useTranslations } from "next-intl";
+import { sendMailAction } from "@/app/_actions/sendMailAction";
+import Image from "next/image";
 
 const ContactPage = () => {
 	const flashMessage = useContext(FlashMessagesContext);
@@ -26,35 +28,21 @@ const ContactPage = () => {
 		const submitDatasConverted = formDataToObject(submitDatas);
 
 		try {
-			const response = await fetch("/api/contactEmail", {
-				method: "POST",
-				body: JSON.stringify(submitDatasConverted)
+			await sendMailAction(submitDatasConverted);
+			hideLoader();
+			flashMessage.addMessage({
+				type: "success",
+				title: t("success"),
+				text: t("success-message")
 			});
-
-			if (response.ok) {
-				hideLoader();
-				flashMessage.addMessage({
-					type: "success",
-					title: "Succès",
-					text: "Merci ! Votre message a bien été envoyé, je vous ferai un retour rapidement."
-				});
-				resetFormDataValues();
-			} else {
-				hideLoader();
-				setIsSubmitBtnDisabled(false);
-				flashMessage.addMessage({
-					type: "error",
-					title: "Erreur",
-					text: "Une erreur est survenue durant l'envoi de votre message, n'hésitez pas à me contacter directement par email. Vous trouverez mon email en bas de la page."
-				});
-			}
+			resetFormDataValues();
 		} catch (error) {
 			hideLoader();
 			setIsSubmitBtnDisabled(false);
 			flashMessage.addMessage({
 				type: "error",
-				title: "Erreur",
-				text: "Une erreur est survenue durant l'envoi de votre message, n'hésitez pas à me contacter directement par email. Vous trouverez mon email en bas de la page."
+				title: t("error"),
+				text: t("error-message")
 			});
 		}
 	};
@@ -95,8 +83,19 @@ const ContactPage = () => {
 	return (
 		<div className={`flex flex-col gap-16 mt-32 px-4 lg:ml-72 ${isLoading ? "blur-md" : ""}`}>
 			<h1 className="titleFont font-semibold text-3xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
-				Formulaire de contact
+				{t("contact-form")}
 			</h1>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_blink.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("hi-its-devobot")}</p>
+				<p className="mt-2">{t("contact-him")}</p>
+			</div>
 			<div className="flex flex-col gap-16 justify-between lg:flex-row">
 				<form
 					className="gap-5 flex flex-col lg:w-2/3 w-full mx-auto"
@@ -143,7 +142,9 @@ const ContactPage = () => {
 						/>
 					</div>
 					<button
-						className={`bg-customViolet rounded-md px-4 py-2 w-fit mx-auto text-white ${isSubmitBtnDisabled ? "disabledBtn" : ""}`}
+						className={`bg-customViolet rounded-md px-4 py-2 w-fit mx-auto text-white hover:bg-hoverBtn hover:shadow-lg ${
+							isSubmitBtnDisabled ? "disabledBtn" : ""
+						}`}
 						type="submit"
 					>
 						{t("send")}

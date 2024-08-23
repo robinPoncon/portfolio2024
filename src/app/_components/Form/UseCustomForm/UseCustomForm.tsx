@@ -76,7 +76,7 @@ const useCustomForm = (initialDatas: FormValues, onSubmit: (submitDatas: FormDat
 
 			let areAllInputsValidated = true;
 			for (const data of newFormDatas) {
-				if (!data.isValidated) {
+				if (!data.isValidated || data.value === "") {
 					areAllInputsValidated = false;
 				}
 			}

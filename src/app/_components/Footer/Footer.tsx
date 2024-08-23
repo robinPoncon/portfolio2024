@@ -4,18 +4,24 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Footer.scss";
+import { useLoader } from "@/app/_context/LoaderContext";
 
 const Footer = () => {
 	const t = useTranslations("Footer");
 	const locale = useLocale();
 	const pathname = usePathname();
+	const { isLoading } = useLoader();
 
 	const isActiveLink = (path: string[]) => {
 		return path.includes(pathname);
 	};
 
 	return (
-		<section className="mt-20 bg-footerBg text-gray-400 py-10 relative z-30">
+		<section
+			className={`mt-20 bg-footerBg text-gray-400 py-10 relative z-30 ${
+				isLoading ? "blur-md" : ""
+			}`}
+		>
 			<article className="flex flex-col gap-14 lg:flex-row justify-center lg:gap-28">
 				<div className="text-center">
 					<h3 className="font-bold mb-3 text-lg">NAVIGATION</h3>
