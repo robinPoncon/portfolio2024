@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: "Protection des Données",
@@ -18,11 +19,21 @@ const DataProtectionPage = () => {
 	const t = useTranslations("DataProtectionPage");
 
 	return (
-		<section className="flex flex-col gap-12 mt-32 px-4">
+		<section className="flex flex-col gap-12 mt-32 px-4 lg:ml-72">
 			<h1 className="titleFont font-semibold text-2xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
 				{t("data-protection")}
 			</h1>
-			<p className="text-justify">{t("welcome-data-protection")}</p>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_surprised.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("its-devobot-again")}</p>
+				<p className="mt-2">{t("welcome-data-protection")}</p>
+			</div>
 			<article className="flex flex-col text-justify gap-5">
 				<h2 className="text-xl font-semibold md:text-2xl">{t("collecting-data")}</h2>
 				<p>{t("when-you-visit")}</p>

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -14,11 +15,21 @@ const LegalNoticesPage = () => {
 	const t = useTranslations("LegalNotices");
 
 	return (
-		<section className="flex flex-col gap-12 pt-20 px-4">
+		<section className="flex flex-col gap-12 pt-20 px-4 lg:ml-72">
 			<h1 className="titleFont font-semibold text-2xl mx-auto w-fit customBorderBlue p-4 md:text-4xl">
 				{t("legal-notices")}
 			</h1>
-			<p className="text-justify">{t("legal-notices-description")}</p>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
+				<Image
+					className="absolute -top-20 -left-14"
+					alt="robot illustration"
+					src="/illustrations/robot_surprised.png"
+					width={150}
+					height={150}
+				></Image>
+				<p className="pl-12">{t("its-devobot-again")}</p>
+				<p className="mt-2">{t("legal-notices-description")}</p>
+			</div>
 			<article>
 				<h2 className="text-xl mb-2 font-semibold md:text-2xl">{t("site-manager")}</h2>
 				<p className="flex flex-col">

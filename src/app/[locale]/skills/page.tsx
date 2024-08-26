@@ -46,7 +46,7 @@ const SkillsPage = () => {
 	return (
 		<section className="mt-32 mx-2 flex flex-col gap-20 lg:ml-72">
 			<h1 className="text-3xl text-center titleFont md:text-4xl">{t("his-skills")}</h1>
-			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
 				<Image
 					className="absolute -top-20 -left-14"
 					alt="robot illustration"
@@ -76,7 +76,7 @@ const SkillsPage = () => {
 			</article>
 
 			<article className="flex flex-col gap-20 xl:flex-row">
-				<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
+				<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
 					<Image
 						className="absolute -top-20 -left-14"
 						alt="robot illustration"
@@ -87,7 +87,7 @@ const SkillsPage = () => {
 					<p className="pl-12">{t("check-his-soft-skills1")}</p>
 					<p className="mt-2">{t("check-his-soft-skills2")}</p>
 				</div>
-				<div className="bg-customViolet text-white rounded-md p-4 flex flex-col gap-4 max-w-xl w-full mx-auto sm:w-96">
+				<div className="bg-customViolet text-white rounded-md p-4 flex flex-col gap-4 shadow-lg max-w-xl w-full mx-auto sm:w-96">
 					{isFrontCardShowing ? (
 						<>
 							<div className="flex justify-center gap-2">

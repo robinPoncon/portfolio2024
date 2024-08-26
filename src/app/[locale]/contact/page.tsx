@@ -85,7 +85,7 @@ const ContactPage = () => {
 			<h1 className="titleFont font-semibold text-3xl text-center mx-auto w-fit customBorderBlue p-4 md:text-4xl">
 				{t("contact-form")}
 			</h1>
-			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto shadow-lg mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
 				<Image
 					className="absolute -top-20 -left-14"
 					alt="robot illustration"

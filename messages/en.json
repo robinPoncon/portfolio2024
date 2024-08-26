@@ -17,7 +17,20 @@
 		"read-more": "Read more",
 		"number-of-projects": "Number of projects completed",
 		"see-his-github": "See his github",
-		"download-cv": "Download Robin's CV"
+		"download-cv": "Download Robin's CV",
+		"know-more": "Would you like to get to know him a little better?",
+		"know-more-description": "I took the liberty of asking Robin a few questions straight away. Let's find out who's behind this portfolio!",
+		"see-answer": "See the answer",
+		"question-1": "What type of career opportunity are you looking for?",
+		"answer-1": "I'm looking for a job as a front-end or fullstack developer (React/NextJs/Typescript/Symfony). But I'm open to other technologies (Angular/VueJs/NodeJS) if I'm offered the opportunity to train in them!",
+		"question-2": "Okay top! And if you had a choice of several opportunities, what criteria would you use to make your choice?",
+		"answer-2": "My first criterion is the type of project! I'm looking for a big, challenging project to push my limits and grow! (My portfolio is a nod to SaaS projects). And if there's the possibility of working/evolving full-time or part-time 4 days a week for me, that's the jackpot!",
+		"question-3": "Very good, we can see that you know what you want! Do you have any hobbies outside work?",
+		"answer-3": "Yes! I love sport and do it almost every day! I go back and forth between tai chi, basketball, competitive volleyball, rollerblading and surfing (which is actually what motivated me to come to Bordeaux)!",
+		"question-4": "Top! Do you have a special or unusual talent that you'd like to share with us?",
+		"answer-4": "It might sound counter-intuitive for a developer, but I'm an energeticist and a musician! I like the very logical, down-to-earth side of web development, but I also like human contact and sharing my creativity! It's this combination that allows me to express who I am and finally find a balance in my life!",
+		"question-5": "Really interesting! And finally: Star Wars or Lord of the Rings?",
+		"answer-5": "Lord of the Rings without hesitation! ‘I can read in your eyes the same fear that could seize my heart. A day may come when the courage of men fails and we abandon our friends. But that day has not come!’ Chills guaranteed ahah!"
 	},
 
 	"SkillsPage": {
@@ -99,6 +112,7 @@
 
 	"LegalNotices": {
 		"legal-notices": "Legal notices",
+		"its-devobot-again": "Hi, it's me again, Devobot!",
 		"legal-notices-description": "We would like to provide you with transparent information about the legal aspects of his site. Please take a moment to read the following information.",
 		"site-manager": "Site manager",
 		"manager-name": "Manager name",
@@ -122,7 +136,8 @@
 
 	"DataProtectionPage": {
 		"data-protection": "Data protection",
-		"welcome-data-protection": "Welcome to the data protection page of the Robin website. I would like to assure you that Robin takes the privacy and security of your personal information very seriously. The purpose of this privacy policy is to inform you about how Robin collects, uses, shares and protects your data.",
+		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
+		"welcome-data-protection": "Welcome to the data protection page. I would like to assure you that Robin takes the privacy and security of your personal information very seriously. The purpose of this privacy policy is to inform you about how Robin collects, uses, shares and protects your data.",
 		"collecting-data": "Collection of your personal data",
 		"when-you-visit": "When you visit its website, it may collect certain personal information, including :",
 		"identification-information": "- Identification information",

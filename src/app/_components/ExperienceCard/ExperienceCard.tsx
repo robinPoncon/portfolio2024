@@ -26,7 +26,7 @@ const ExperienceCard = ({
 	const t = useTranslations("ExperiencesCard");
 
 	return (
-		<article className="border-8 rounded-md border-customViolet flex flex-col gap-3 bg-lighterBg dark:bg-greyBg w-full max-w-2xl mx-auto text-center">
+		<article className="border-8 rounded-md border-customViolet flex flex-col gap-3 shadow-lg bg-lighterBg dark:bg-greyBg w-full max-w-2xl mx-auto text-center">
 			<p className="bg-customViolet py-1">
 				<Image
 					className="mx-auto"

@@ -17,7 +17,20 @@
 		"read-more": "En savoir plus",
 		"number-of-projects": "Nombre de projets réalisés",
 		"see-his-github": "Voir son github",
-		"download-cv": "Télécharger le CV de Robin"
+		"download-cv": "Télécharger le CV de Robin",
+		"know-more": "Envie de le connaître un peu plus ?",
+		"know-more-description": "Je me suis permis de poser directement quelques questions à Robin. Découvrons ensemble qui se cache derrière ce portfolio !",
+		"see-answer": "Voir la réponse",
+		"question-1": "Quel type d’opportunité professionnelle recherches-tu ?",
+		"answer-1": "Je suis à la recherche d’un poste en tant que développeur front-end ou fullstack (React/NextJs/Typescript/Symfony). Mais je suis ouvert à d’autres technos (Angular/VueJs/NodeJS) si on m’offre l’opportunité de me former dessus !",
+		"question-2": "Okay top ! Et si tu avais le choix entre plusieurs opportunités, sur quels critères, ferais-tu ton choix ?",
+		"answer-2": "Mon premier critère, c’est le type de projet ! Je recherche un gros projet challengeant afin de repousser mes limites et d'évoluer ! (Mon portfolio est justement un clin d’œil aux projets SaaS). Et s'il y a la possibilité de travailler/évoluer à temps plein ou partiel de 4jours/semaine pour moi, c’est le jackpot !",
+		"question-3": "Très bien, on voit que tu sais ce que tu veux ! As-tu des passions en dehors du travail ?",
+		"answer-3": "Yes ! J’adore le sport, j’en fais quasiment tous les jours ! J’oscille entre le tai chi, le basket, le volley en compétition, le roller et le surf (c’est d’ailleurs ce dernier qui m’a motivé à venir à Bordeaux) !",
+		"question-4": "Top ! As-tu un talent particulier ou insolite que tu voudrais nous partager ?",
+		"answer-4": "Ça peut être contre intuitif pour un développeur, mais je suis énergéticien et musicien ! J’aime le côté très logique et terre-à-terre du développement web, mais j’aime aussi le contact humain et partager ma créativité ! C’est cet ensemble qui me permet d’exprimer qui je suis et de finalement trouver un équilibre dans ma vie !",
+		"question-5": "Super intéressant ! Et pour finir : plutôt Star Wars ou Seigneur des anneaux ?",
+		"answer-5": "Seigneur des anneaux sans hésiter ! « Je peux lire dans vos yeux la même peur qui pourrait saisir mon cœur. Un jour peut venir où le courage des hommes faillira où nous abandonnerons nos amis. Mais ce jour n'est pas arrivé ! » Frissons garantis ahah !"
 	},
 
 	"SkillsPage": {
@@ -99,6 +112,7 @@
 
 	"LegalNotices": {
 		"legal-notices": "Mentions légales",
+		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
 		"legal-notices-description": "Il tient à vous informer de manière transparente sur les aspects juridiques de son site. Veuillez prendre quelques instants pour lire les informations suivantes.",
 		"site-manager": "Responsable du site",
 		"manager-name": "Nom du responsable",
@@ -122,7 +136,8 @@
 
 	"DataProtectionPage": {
 		"data-protection": "Protection des données",
-		"welcome-data-protection": "Bienvenue sur la page dédiée à la protection de vos données sur le site web de Robin. Je tiens à vous assurer qu'il prend très au sérieux la confidentialité et la sécurité de vos informations personnelles. Cette politique de protection des données a pour but de vous informer sur la manière dont il collecte, utilise, partage et protège vos données.",
+		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
+		"welcome-data-protection": "Bienvenue sur la page dédiée à la protection de vos données. Je tiens à vous assurer que Robin prend très au sérieux la confidentialité et la sécurité de vos informations personnelles. Cette politique de protection des données a pour but de vous informer sur la manière dont il collecte, utilise, partage et protège vos données.",
 		"collecting-data": "Collecte de vos données personnelles",
 		"when-you-visit": "Lorsque vous visitez son site web, il peut collecter certaines informations personnelles, notamment :",
 		"identification-information": "- Informations d'identification",

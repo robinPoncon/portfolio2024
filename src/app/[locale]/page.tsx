@@ -1,15 +1,60 @@
+"use client";
+
 import { useLocale, useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
 	const t = useTranslations("Home");
 	const locale = useLocale();
+	const { resolvedTheme } = useTheme();
+
+	const [questionsAndAnswersArray, setQuestionsAndAnswersArray] = useState([
+		{
+			id: 0,
+			question: t("question-1"),
+			answer: `"${t("answer-1")}"`,
+			isAnswerVisible: false
+		},
+		{
+			id: 1,
+			question: t("question-2"),
+			answer: `"${t("answer-2")}"`,
+			isAnswerVisible: false
+		},
+		{
+			id: 2,
+			question: t("question-3"),
+			answer: `"${t("answer-3")}"`,
+			isAnswerVisible: false
+		},
+		{
+			id: 3,
+			question: t("question-4"),
+			answer: `"${t("answer-4")}"`,
+			isAnswerVisible: false
+		},
+		{
+			id: 4,
+			question: t("question-5"),
+			answer: `"${t("answer-5")}"`,
+			isAnswerVisible: false
+		}
+	]);
+
+	const showAnswer = (id: number) => {
+		const newArray = [...questionsAndAnswersArray];
+		const getIndex = newArray.findIndex((element) => element.id === id);
+		newArray[getIndex].isAnswerVisible = true;
+		setQuestionsAndAnswersArray(newArray);
+	};
 
 	return (
 		<section className="mt-32 mx-4 flex flex-col gap-20 lg:ml-72">
-			<h1 className="text-3xl text-center titleFont md:text-4xl">Portfolio Robin Ponçon</h1>
-			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 bg-lighterBg dark:bg-greyBg sm:w-96">
+			<h1 className="text-3xl text-center titleFont md:text-4xl">Portfolio - Robin Ponçon</h1>
+			<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
 				<Image
 					className="absolute -top-20 -left-14"
 					alt="robot illustration"
@@ -21,15 +66,15 @@ export default function Home() {
 				<p className="mt-2">{t("i-will-be-your-guide")}</p>
 			</div>
 			<article>
-				<div className="border-4 border-customViolet rounded-lg w-64 mx-auto">
+				<div className="border-4 border-customViolet rounded-lg w-64 mx-auto flex flex-col md:flex-row md:w-full max-w-lg shadow-lg">
 					<Image
-						className="scale-x-[-1] rounded-t-[4px]"
+						className="scale-x-[-1] rounded-t-[4px] md:rounded-tl-none md:rounded-tr-[4px] md:rounded-br-[4px]"
 						alt="picture of robin"
 						src="/images/photo_robin.png"
 						width={256}
 						height={256}
 					/>
-					<div className="p-2 bg-lighterBg dark:bg-greyBg rounded-b-[4px]">
+					<div className="p-2 bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-3 md:my-auto">
 						<p>
 							<strong>{t("job")} :</strong>{" "}
 							<span className="italic">{t("fullstack-developper")}</span>
@@ -61,7 +106,7 @@ export default function Home() {
 				</div>
 			</article>
 			<article className="flex flex-col gap-20 md:flex-row md:gap-0">
-				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 flex flex-col gap-5 border-4 border-customVioletLighter">
+				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 flex flex-col gap-5 border-4 border-customViolet">
 					<h2 className="text-lg titleFont text-center font-semibold">
 						{t("number-of-projects")}
 					</h2>
@@ -90,7 +135,7 @@ export default function Home() {
 						></Image>
 					</Link>
 				</div>
-				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 border-4 border-customVioletLighter">
+				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 border-4 border-customViolet">
 					<h2 className="text-lg titleFont text-center font-semibold md:mt-8">
 						{t("download-cv")}
 					</h2>
@@ -108,6 +153,56 @@ export default function Home() {
 							/>
 						</a>
 					</div>
+				</div>
+			</article>
+			<article className="flex flex-col gap-20">
+				<div className="relative border-4 border-customVioletLighter rounded-lg p-4 w-64 mx-auto mt-10 shadow-lg bg-lighterBg dark:bg-greyBg sm:w-96">
+					<Image
+						className="absolute -top-20 -left-14"
+						alt="robot illustration"
+						src="/illustrations/robot_surprised.png"
+						width={150}
+						height={150}
+					></Image>
+					<p className="pl-12">{t("know-more")}</p>
+					<p className="mt-2">{t("know-more-description")}</p>
+				</div>
+				<div className="flex flex-col gap-10">
+					{questionsAndAnswersArray?.map((element) => (
+						<div
+							key={element.id}
+							className="border-4 border-customViolet bg-lighterBg dark:bg-greyBg rounded-md w-full mx-auto max-w-xl shadow-lg"
+						>
+							<div className="flex gap-2 border-b-4 border-customViolet">
+								<p className="font-semibold text-2xl px-4 bg-customViolet text-white flex items-center justify-center">
+									Q
+								</p>
+								<strong className="p-2">{element.question}</strong>
+							</div>
+							<div className="p-4 italic">
+								{element.isAnswerVisible ? (
+									<p className="italic">{element.answer}</p>
+								) : (
+									<button
+										className="flex gap-2 mx-auto px-2 py-1 rounded-lg hover:bg-gray-300"
+										onClick={() => showAnswer(element.id)}
+									>
+										<p>{t("see-answer")}</p>
+										<Image
+											alt="icon arrow down"
+											src={
+												resolvedTheme === "dark"
+													? "icons/arrowDown_icon.svg"
+													: "icons/arrowDown_icon_black.svg"
+											}
+											width={24}
+											height={24}
+										/>
+									</button>
+								)}
+							</div>
+						</div>
+					))}
 				</div>
 			</article>
 		</section>
