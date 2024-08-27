@@ -173,5 +173,12 @@
 		"about": "ABOUT",
 		"download-cv": "Download CV",
 		"all-rights-reserved": "All rights reserved"
+	},
+
+	"NotFoundPage": {
+		"not-found": "Page not found !",
+		"hey-im-devobot": "Hi, it's Devobot !",
+		"you-are-lost": "It seems you've lost your way in a parallel universe! Click on the button below to return to your previous destination.",
+		"back": "Back Home"
 	}
 }

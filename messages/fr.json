@@ -173,5 +173,12 @@
 		"about": "À PROPOS",
 		"download-cv": "Télécharger le CV",
 		"all-rights-reserved": "Tous droits réservés"
+	},
+
+	"NotFoundPage": {
+		"not-found": "Page introuvable !",
+		"hey-im-devobot": "Salut, C'est Devobot !",
+		"you-are-lost": "Il semblerait que vous vous soyez égaré dans un univers parallèle ! Cliquez sur le bouton ci-dessous pour revenir dans un univers connu.",
+		"back": "Retour à l'accueil"
 	}
 }
