@@ -94,7 +94,7 @@ const ContactPage = () => {
 					height={150}
 				></Image>
 				<p className="pl-12">{t("hi-its-devobot")}</p>
-				<p className="mt-2">{t("contact-him")}</p>
+				<h2 className="mt-2">{t("contact-him")}</h2>
 			</div>
 			<div className="flex flex-col gap-16 justify-between lg:flex-row">
 				<form

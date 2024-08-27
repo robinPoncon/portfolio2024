@@ -12,7 +12,8 @@ import { getMessages } from "next-intl/server";
 
 export const metadata = {
 	title: "Portfolio Robin Ponçon",
-	description: ""
+	description:
+		"Découvrez le portfolio de Robin Ponçon, développeur fullstack spécialisé en React, NextJS, TypeScript et Symfony. Consultez ses projets, expériences professionnelles et compétences techniques."
 };
 
 interface RootLayoutProps {

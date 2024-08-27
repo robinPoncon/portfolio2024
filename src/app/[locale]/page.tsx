@@ -4,7 +4,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import "./globals.scss";
 
 export default function Home() {
 	const t = useTranslations("Home");
@@ -13,36 +14,68 @@ export default function Home() {
 
 	const [questionsAndAnswersArray, setQuestionsAndAnswersArray] = useState([
 		{
-			id: 0,
+			id: 1,
 			question: t("question-1"),
 			answer: `"${t("answer-1")}"`,
-			isAnswerVisible: false
-		},
-		{
-			id: 1,
-			question: t("question-2"),
-			answer: `"${t("answer-2")}"`,
-			isAnswerVisible: false
+			isAnswerVisible: false,
+			srcIcon: "/icons/arrowDown_icon_black.svg"
 		},
 		{
 			id: 2,
-			question: t("question-3"),
-			answer: `"${t("answer-3")}"`,
-			isAnswerVisible: false
+			question: t("question-2"),
+			answer: `"${t("answer-2")}"`,
+			isAnswerVisible: false,
+			srcIcon: "/icons/arrowDown_icon_black.svg"
 		},
 		{
 			id: 3,
-			question: t("question-4"),
-			answer: `"${t("answer-4")}"`,
-			isAnswerVisible: false
+			question: t("question-3"),
+			answer: `"${t("answer-3")}"`,
+			isAnswerVisible: false,
+			srcIcon: "/icons/arrowDown_icon_black.svg"
 		},
 		{
 			id: 4,
+			question: t("question-4"),
+			answer: `"${t("answer-4")}"`,
+			isAnswerVisible: false,
+			srcIcon: "/icons/arrowDown_icon_black.svg"
+		},
+		{
+			id: 5,
 			question: t("question-5"),
 			answer: `"${t("answer-5")}"`,
-			isAnswerVisible: false
+			isAnswerVisible: false,
+			srcIcon: "/icons/arrowDown_icon_black.svg"
 		}
 	]);
+
+	const switchSrcIcon = (iconColor: string, id: number | null) => {
+		const newArray = [...questionsAndAnswersArray];
+		if (id) {
+			const getIndex = newArray.findIndex((element) => element.id === id);
+			newArray[getIndex].srcIcon =
+				iconColor === "white"
+					? "/icons/arrowDown_icon.svg"
+					: "/icons/arrowDown_icon_black.svg";
+		} else {
+			for (const element of newArray) {
+				element.srcIcon =
+					iconColor === "white"
+						? "/icons/arrowDown_icon.svg"
+						: "/icons/arrowDown_icon_black.svg";
+			}
+		}
+		setQuestionsAndAnswersArray(newArray);
+	};
+
+	useEffect(() => {
+		if (resolvedTheme === "dark") {
+			switchSrcIcon("white", null);
+		} else {
+			switchSrcIcon("black", null);
+		}
+	}, [resolvedTheme]);
 
 	const showAnswer = (id: number) => {
 		const newArray = [...questionsAndAnswersArray];
@@ -184,17 +217,23 @@ export default function Home() {
 									<p className="italic">{element.answer}</p>
 								) : (
 									<button
-										className="flex gap-2 mx-auto px-2 py-1 rounded-lg hover:bg-gray-300"
+										className="flex gap-2 mx-auto px-2 py-1 rounded-lg hover:bg-gray-300 hover:text-black"
 										onClick={() => showAnswer(element.id)}
+										onMouseEnter={
+											resolvedTheme === "dark"
+												? () => switchSrcIcon("black", element.id)
+												: undefined
+										}
+										onMouseLeave={
+											resolvedTheme === "dark"
+												? () => switchSrcIcon("white", element.id)
+												: undefined
+										}
 									>
 										<p>{t("see-answer")}</p>
 										<Image
-											alt="icon arrow down"
-											src={
-												resolvedTheme === "dark"
-													? "icons/arrowDown_icon.svg"
-													: "icons/arrowDown_icon_black.svg"
-											}
+											alt="arrow down icon"
+											src={element.srcIcon}
 											width={24}
 											height={24}
 										/>

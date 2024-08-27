@@ -17,7 +17,7 @@ export default function NotFoundPage() {
 					height={150}
 				></Image>
 				<p className="pl-12">{t("hey-im-devobot")}</p>
-				<p className="mt-2">{t("you-are-lost")}</p>
+				<h2 className="mt-2">{t("you-are-lost")}</h2>
 				<Link
 					className="bg-customViolet text-white px-4 py-3 mt-4 rounded-md mx-auto w-fit flex gap-1 hover:bg-hoverBtn hover:shadow-lg"
 					href={"/"}
