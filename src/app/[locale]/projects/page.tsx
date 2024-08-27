@@ -19,9 +19,7 @@ const ProjectsPage = () => {
 				<p className="mt-2">{t("check-his-projects")}</p>
 			</div>
 			<article className="bg-lighterBg dark:bg-greyBg py-10 px-4 rounded-md flex flex-col gap-4 shadow-lg w-full max-w-2xl mx-auto">
-				<h2 className="titleFont text-lg text-center font-bold text-customViolet">
-					{t("roots-of-healing")}
-				</h2>
+				<h2 className="titleFont text-lg text-center font-bold">{t("roots-of-healing")}</h2>
 				<Image
 					className="mx-auto"
 					alt="image projet les racines de la guérison"

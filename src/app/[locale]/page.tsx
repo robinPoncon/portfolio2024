@@ -107,7 +107,7 @@ export default function Home() {
 						width={256}
 						height={256}
 					/>
-					<div className="p-2 bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-3 md:my-auto">
+					<div className="p-2 bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-3">
 						<p>
 							<strong>{t("job")} :</strong>{" "}
 							<span className="italic">{t("fullstack-developper")}</span>
@@ -127,7 +127,7 @@ export default function Home() {
 							className="flex gap-2 bg-customViolet w-fit px-3 py-2 rounded-md text-white mx-auto my-5 hover:bg-hoverBtn hover:shadow-lg"
 							href={`${locale}/skills`}
 						>
-							<p>{t("read-more")}</p>
+							<p>{t("see-his-skills")}</p>
 							<Image
 								alt="icon arrow right"
 								src="/icons/arrowForward_icon.svg"
