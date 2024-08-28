@@ -21,7 +21,6 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 				label: title,
 				data: datasLabels,
 				backgroundColor: ["#988ce3"],
-				// borderColor: ["#5440d1"],
 				borderWidth: 0,
 				borderRadius: 4
 			}
@@ -38,6 +37,9 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 					font: {
 						weight: "bold"
 					}
+				},
+				grid: {
+					color: resolvedTheme === "dark" ? "#4b5563" : "#d1d5db"
 				}
 			},
 			x: {
@@ -50,7 +52,10 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 						weight: "bold"
 					}
 				},
-				max: 100
+				max: 100,
+				grid: {
+					color: resolvedTheme === "dark" ? "#4b5563" : "#d1d5db"
+				}
 			}
 		},
 		plugins: {
@@ -69,7 +74,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	};
 
 	return (
-		<div className="h-52 shadow-lg bg-lighterBg rounded-md p-2">
+		<div className="h-52 shadow-lg bg-lighterBg dark:bg-greyBg rounded-md p-2">
 			<Bar
 				data={data}
 				options={options}
