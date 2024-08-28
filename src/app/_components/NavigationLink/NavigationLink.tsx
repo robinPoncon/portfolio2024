@@ -40,39 +40,41 @@ const NavigationLink = ({
 		} else {
 			if (pathnamesChecked.includes(pathname)) {
 				setSrcIconDisplayed(srcIcon.darkMode);
+			} else {
+				setSrcIconDisplayed(srcIcon.lightMode);
 			}
-			setSrcIconDisplayed(srcIcon.lightMode);
 		}
-	}, [resolvedTheme]);
+	}, [resolvedTheme, pathnamesChecked]);
 
 	return (
 		<li
 			onClick={setIsMenuOpen ? () => setIsMenuOpen(false) : undefined}
 			onMouseEnter={
-				resolvedTheme === "dark" ? () => setSrcIconDisplayed(srcIcon.lightMode) : undefined
+				resolvedTheme === "dark" && !pathnamesChecked.includes(pathname)
+					? () => setSrcIconDisplayed(srcIcon.lightMode)
+					: undefined
 			}
 			onMouseLeave={
 				resolvedTheme === "dark" ? () => setSrcIconDisplayed(srcIcon.darkMode) : undefined
 			}
-			className={`flex gap-2 w-fit px-2 py-1 rounded-lg ${
+			className={`w-fit px-2 py-1 rounded-lg ${
 				isActiveLink(pathnamesChecked)
 					? "bg-customViolet text-white"
 					: "hover:bg-gray-300 hover:text-black"
 			}`}
 		>
-			<Image
-				alt={altIcon}
-				className="mb-auto"
-				src={srcIconDisplayed}
-				width={24}
-				height={24}
-				onClick={setIsMenuOpen ? () => setIsMenuOpen(true) : undefined}
-			/>
-
 			<Link
-				className="text-xl"
+				className="text-xl flex gap-2"
 				href={href}
 			>
+				<Image
+					alt={altIcon}
+					className="mb-auto"
+					src={srcIconDisplayed}
+					width={24}
+					height={24}
+					onClick={setIsMenuOpen ? () => setIsMenuOpen(true) : undefined}
+				/>
 				{text}
 			</Link>
 		</li>
