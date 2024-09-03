@@ -77,8 +77,7 @@ const Footer = () => {
 					<h3 className="font-bold mb-3 text-lg">{t("about")}</h3>
 					<div className="flex flex-col gap-2 italic">
 						<p>Robin Ponçon</p>
-						<p>59 rue Pierre Renaudel</p>
-						<p>33130 Bègles</p>
+						<p>Localisation : Bordeaux</p>
 						<p>
 							Email :{" "}
 							<a

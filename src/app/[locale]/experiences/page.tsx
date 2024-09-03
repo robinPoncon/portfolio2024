@@ -29,7 +29,7 @@ const ExperiencePage = () => {
 				technos="NextJS, React, TypeScript, Tailwind"
 				description={t("front-end-developper-experience")}
 			/>
-			<p className="h-20 bg-customViolet w-2 mx-auto -my-20" />
+			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
 				title={t("fullstack-developper")}
 				dates={t("february2021-to-july2023")}
@@ -38,7 +38,7 @@ const ExperiencePage = () => {
 				technos="React, Symfony, Typescript, SCSS, jQuery, Javascript, Twig"
 				description={t("fullstack-developper-experience")}
 			/>
-			<p className="h-20 bg-customViolet w-2 mx-auto -my-20" />
+			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
 				title={t("fullstack-web-developper")}
 				dates={t("december2020-to-december2021")}
@@ -47,7 +47,7 @@ const ExperiencePage = () => {
 				technos="React, Symfony, SCSS, jQuery, Javascript, Twig"
 				description={t("fullstack-web-developper-experience")}
 			/>
-			<p className="h-20 bg-customViolet w-2 mx-auto -my-20" />
+			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
 				title={t("junior-web-developper")}
 				dates={t("january2019-to-july2020")}

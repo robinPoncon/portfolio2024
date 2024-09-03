@@ -99,7 +99,7 @@ export default function Home() {
 				<p className="mt-2">{t("i-will-be-your-guide")}</p>
 			</div>
 			<article>
-				<div className="border-4 border-customViolet rounded-lg w-64 mx-auto flex flex-col md:flex-row md:w-full max-w-lg shadow-lg">
+				<div className="border-4 border-customViolet bg-lighterBg dark:bg-greyBg rounded-lg w-64 mx-auto flex flex-col md:flex-row md:w-full max-w-xl shadow-lg">
 					<Image
 						className="scale-x-[-1] rounded-t-[4px] md:rounded-tl-none md:rounded-tr-[4px] md:rounded-br-[4px]"
 						alt="picture of robin"
@@ -107,7 +107,7 @@ export default function Home() {
 						width={256}
 						height={256}
 					/>
-					<div className="p-2 bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-3">
+					<div className="p-5 my-auto bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-5">
 						<p>
 							<strong>{t("job")} :</strong>{" "}
 							<span className="italic">{t("fullstack-developper")}</span>
@@ -139,7 +139,7 @@ export default function Home() {
 				</div>
 			</article>
 			<article className="flex flex-col gap-20 md:flex-row md:gap-0">
-				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 flex flex-col gap-5 border-4 border-customViolet">
+				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 flex flex-col gap-5 border-0 border-customViolet">
 					<h2 className="text-lg titleFont text-center font-semibold">
 						{t("number-of-projects")}
 					</h2>
@@ -168,7 +168,7 @@ export default function Home() {
 						></Image>
 					</Link>
 				</div>
-				<div className="bg-lighterBg dark:bg-greyBg rounded-lg shadow-lg w-64 mx-auto p-4 border-4 border-customViolet">
+				<div className="bg-customViolet text-white rounded-lg shadow-lg w-64 mx-auto p-4 border-4 border-customViolet">
 					<h2 className="text-lg titleFont text-center font-semibold md:mt-8">
 						{t("download-cv")}
 					</h2>
@@ -180,7 +180,7 @@ export default function Home() {
 						>
 							<Image
 								alt="icon download document"
-								src="/icons/download-document_icon_violetDarker.svg"
+								src="/icons/download-document_icon_white.svg"
 								width={48}
 								height={48}
 							/>
