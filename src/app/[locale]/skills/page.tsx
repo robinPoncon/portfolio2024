@@ -101,7 +101,7 @@ const SkillsPage = () => {
 									{t("his-soft-skills")}
 								</h2>
 							</div>
-							<div className="flex flex-col gap-2 px-2 ml-5">
+							<div className="flex flex-col gap-2 px-2">
 								<div className="flex justify-between">
 									<div
 										className="cursor-pointer flex gap-1 group"
@@ -109,7 +109,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[0].title}</p>
 										<Image
-											className="hidden group-hover:block"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
@@ -122,7 +122,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[1].title}</p>
 										<Image
-											className="invisible group-hover:visible"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
@@ -137,7 +137,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[2].title}</p>
 										<Image
-											className="hidden group-hover:block"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
@@ -150,7 +150,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[3].title}</p>
 										<Image
-											className="invisible group-hover:visible"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
@@ -165,7 +165,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[4].title}</p>
 										<Image
-											className="hidden group-hover:block"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
@@ -178,7 +178,7 @@ const SkillsPage = () => {
 									>
 										<p className="my-auto">{softSkillsArray[5].title}</p>
 										<Image
-											className="invisible group-hover:visible"
+											className="hidden mt-[-2px] sm:block"
 											alt="icon right arrow"
 											src="/icons/arrowForward_icon.svg"
 											width={20}
