@@ -80,8 +80,8 @@
 		"fullstack-developper-experience": "He started out as an alternating front-end developer (Twig, JS, jQuery, SCSS), then moved on to a permanent contract as a fullstack developer (React/Typescript and Symfony).",
 		"fullstack-web-developper-experience": "He strengthened his knowledge of Symfony, then learned React and used it to redesign the software of the company where he was a work-study student.",
 		"junior-web-developper-experience": "He created 5 website projects during his online training. Mock-up integration, creation of a Wordpress site, creation of a dynamic site in JS with API integration, creation of a blog in PHP and JS, then a redesign of a basketball club site in Symfony.",
-		"its-devobot-again": "Hey, it's me again, Devobot!",
-		"career-path": "Click here to find out more about her background, including her professional experience and training!"
+		"its-devobot-again": "Devobot, at your service!",
+		"career-path": "Here you find more about his background, including his professional experience and training!"
 	},
 
 	"ExperiencesCard": {
@@ -93,7 +93,7 @@
 
 	"ContactPage": {
 		"contact-form": "Contact form",
-		"hi-its-devobot": "Hi, its Devobot again !",
+		"hi-its-devobot": "Yes, it's me again, Devobot!",
 		"contact-him": "Does his world appeal to you and do you have an opportunity that matches his profile? Then send him a message!",
 		"your-message": "Your message",
 		"your-message-placeholder": "Example : I have an opportunity for you",
@@ -136,7 +136,7 @@
 
 	"DataProtectionPage": {
 		"data-protection": "Data protection",
-		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
+		"its-devobot-again": "Hi, it's me again, Devobot!",
 		"welcome-data-protection": "Welcome to the data protection page. I would like to assure you that Robin takes the privacy and security of your personal information very seriously. The purpose of this privacy policy is to inform you about how Robin collects, uses, shares and protects your data.",
 		"collecting-data": "Collection of your personal data",
 		"when-you-visit": "When you visit its website, it may collect certain personal information, including :",
@@ -171,6 +171,7 @@
 		"legal-notices": "Legal notices",
 		"data-protection": "Data protection",
 		"about": "ABOUT",
+		"location": "Location",
 		"download-cv": "Download CV",
 		"all-rights-reserved": "All rights reserved"
 	},

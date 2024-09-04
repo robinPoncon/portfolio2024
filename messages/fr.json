@@ -80,8 +80,8 @@
 		"fullstack-developper-experience": "Il a commencé en tant alternant développeur front (Twig, JS, jQuery, SCSS) puis il a évolué en CDI en tant que développeur fullstack (React/Typescript et Symfony).",
 		"fullstack-web-developper-experience": "Il a renforcé ses connaissances sur Symfony, puis il a appri React et l'a mis en place lors de la refonte du logiciel de l'entreprise où il était alternant.",
 		"junior-web-developper-experience": "Il a créé 5 projets de sites internet durant sa formation en ligne. Intégration de maquette, création d'un site wordpress, création d'un site dynamique en JS avec intégration d'API, création d'un blog en PHP et JS, puis une refonte d'un site d'un club de basket en Symfony.",
-		"its-devobot-again": "Hey, c'est encore moi, Devobot !",
-		"career-path": "Ici pour trouverez son parcours comprenant ses expériences professionnelles ainsi que ses formations !"
+		"its-devobot-again": "Devobot, pour vous servir !",
+		"career-path": "Ici vous trouverez son parcours comprenant ses expériences professionnelles ainsi que ses formations !"
 	},
 
 	"ExperiencesCard": {
@@ -93,7 +93,7 @@
 
 	"ContactPage": {
 		"contact-form": "Formulaire de contact",
-		"hi-its-devobot": "Salut, c'est encore moi Devobot !",
+		"hi-its-devobot": "Et oui, c'est encore moi, Devobot !",
 		"contact-him": "Son univers vous fait vibrer et vous avez une opportunité qui correspond à son profil ? Alors n'hésitez plus, envoyer lui un message !",
 		"your-message": "Votre message",
 		"your-message-placeholder": "Exemple : J'ai une opportunité à vous proposer",
@@ -112,7 +112,7 @@
 
 	"LegalNotices": {
 		"legal-notices": "Mentions légales",
-		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
+		"its-devobot-again": "Hey, c'est encore moi, Devobot !",
 		"legal-notices-description": "Il tient à vous informer de manière transparente sur les aspects juridiques de son site. Veuillez prendre quelques instants pour lire les informations suivantes.",
 		"site-manager": "Responsable du site",
 		"manager-name": "Nom du responsable",
@@ -136,7 +136,7 @@
 
 	"DataProtectionPage": {
 		"data-protection": "Protection des données",
-		"its-devobot-again": "Salut, c'est encore moi, Devobot !",
+		"its-devobot-again": "Hey, c'est encore moi, Devobot !",
 		"welcome-data-protection": "Bienvenue sur la page dédiée à la protection de vos données. Je tiens à vous assurer que Robin prend très au sérieux la confidentialité et la sécurité de vos informations personnelles. Cette politique de protection des données a pour but de vous informer sur la manière dont il collecte, utilise, partage et protège vos données.",
 		"collecting-data": "Collecte de vos données personnelles",
 		"when-you-visit": "Lorsque vous visitez son site web, il peut collecter certaines informations personnelles, notamment :",
@@ -171,6 +171,7 @@
 		"legal-notices": "Mentions légales",
 		"data-protection": "Protection des données",
 		"about": "À PROPOS",
+		"location": "Localisation",
 		"download-cv": "Télécharger le CV",
 		"all-rights-reserved": "Tous droits réservés"
 	},
