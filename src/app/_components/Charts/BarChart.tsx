@@ -74,7 +74,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	};
 
 	return (
-		<div className="h-52 shadow-lg bg-lighterBg dark:bg-greyBg rounded-md p-2">
+		<div className="h-56 shadow-lg bg-lighterBg dark:bg-greyBg rounded-md p-2">
 			<Bar
 				data={data}
 				options={options}

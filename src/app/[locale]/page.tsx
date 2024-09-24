@@ -119,8 +119,8 @@ export default function Home() {
 						<p>
 							<strong>Technos :</strong>{" "}
 							<span className="italic">
-								NextJS, React, Typescript, JavaScript, Tailwind, HTML5, SCSS,
-								Symfony, PHP, Twig, MySQL
+								NextJS, React, Typescript, JavaScript, Node.js, Express.js, MongoDB,
+								Mongoose, Tailwind, HTML5, SCSS, Symfony, PHP, MySQL, Twig, EJS
 							</span>
 						</p>
 						<Link
@@ -151,7 +151,7 @@ export default function Home() {
 							height={48}
 						/>
 						<p className="text-2xl font-semibold rounded-full w-12 text-center text-white bg-customViolet h-12 leading-[48px]">
-							11
+							16
 						</p>
 					</div>
 					<Link

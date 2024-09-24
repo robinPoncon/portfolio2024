@@ -22,7 +22,7 @@
 		"know-more-description": "Je me suis permis de poser directement quelques questions à Robin. Découvrons ensemble qui se cache derrière ce portfolio !",
 		"see-answer": "Voir la réponse",
 		"question-1": "Quel type d’opportunité professionnelle recherches-tu ?",
-		"answer-1": "Je suis à la recherche d’un poste en tant que développeur front-end ou fullstack (React/NextJs/Typescript/Symfony). Mais je suis ouvert à d’autres technos (Angular/VueJs/NodeJS) si on m’offre l’opportunité de me former dessus !",
+		"answer-1": "Je suis à la recherche d’un poste en tant que développeur front-end ou fullstack (React/NextJs/Typescript/Symfony/Node.js). Mais je suis ouvert à d’autres technos (Angular/Vue.js) si on m’offre l’opportunité de me former dessus !",
 		"question-2": "Okay top ! Et si tu avais le choix entre plusieurs opportunités, sur quels critères, ferais-tu ton choix ?",
 		"answer-2": "Mon premier critère, c’est le type de projet ! Je recherche un gros projet challengeant afin de repousser mes limites et d'évoluer ! (Mon portfolio est justement un clin d’œil aux projets SaaS). Et s'il y a la possibilité de travailler/évoluer à temps plein ou partiel de 4jours/semaine pour moi, c’est le jackpot !",
 		"question-3": "Très bien, on voit que tu sais ce que tu veux ! As-tu des passions en dehors du travail ?",
@@ -67,7 +67,6 @@
 
 	"ExperiencesPage": {
 		"his-experiences": "Ses expériences",
-		"front-end-developper": "Développeur Front-End",
 		"fullstack-developper": "Développeur Fullstack",
 		"fullstack-web-developper": "Développeur Web Fullstack",
 		"junior-web-developper": "Développeur Web Junior",
@@ -76,7 +75,7 @@
 		"december2020-to-december2021": "Décembre 2020 à Décembre 2021",
 		"january2019-to-july2020": "Janvier 2019 à Juillet 2020",
 		"self-employed-contractor": "Auto-entrepreneur",
-		"front-end-developper-experience": "Il a développé son auto-entreprise dans le soin énergétique et la musique thérapeutique. Il s'est formé et a créé son propre site internet avec NextJS pour avoir un rendu moderne, intuitif et performant pour les utilisateurs.",
+		"front-end-developper-experience": "Il s'est formé sur NextJS, Node.js, Express.js, mongoDB et a créé deux sites internet pour avoir un rendu moderne, intuitif et performant pour les utilisateurs. En parallèle il a développé son auto-entreprise dans le soin énergétique et la musique.",
 		"fullstack-developper-experience": "Il a commencé en tant alternant développeur front (Twig, JS, jQuery, SCSS) puis il a évolué en CDI en tant que développeur fullstack (React/Typescript et Symfony).",
 		"fullstack-web-developper-experience": "Il a renforcé ses connaissances sur Symfony, puis il a appri React et l'a mis en place lors de la refonte du logiciel de l'entreprise où il était alternant.",
 		"junior-web-developper-experience": "Il a créé 5 projets de sites internet durant sa formation en ligne. Intégration de maquette, création d'un site wordpress, création d'un site dynamique en JS avec intégration d'API, création d'un blog en PHP et JS, puis une refonte d'un site d'un club de basket en Symfony.",

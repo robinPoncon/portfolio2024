@@ -65,13 +65,31 @@ const SkillsPage = () => {
 				/>
 				<HorizontalBarChart
 					title={t("frameworks-expertise")}
-					labels={["Tailwind", "jQuery", "React", "NextJS", "Twig", "Symfony"]}
-					datasLabels={[80, 70, 70, 40, 60, 50]}
+					labels={[
+						"Tailwind",
+						"jQuery",
+						"React",
+						"Express.js",
+						"EJS",
+						"NextJS",
+						"Twig",
+						"Symfony"
+					]}
+					datasLabels={[80, 70, 70, 40, 40, 40, 60, 60]}
 				/>
 				<HorizontalBarChart
 					title={t("tools-expertise")}
-					labels={["Cypress", "Figma", "Gitlab", "Github", "Jira", "MySQL"]}
-					datasLabels={[50, 60, 50, 50, 60, 40]}
+					labels={[
+						"Node.js",
+						"Cypress",
+						"Figma",
+						"Git",
+						"Jira",
+						"MongoDB",
+						"Mongoose",
+						"MySQL"
+					]}
+					datasLabels={[40, 50, 60, 50, 60, 40, 50, 40]}
 				/>
 			</article>
 

@@ -22,7 +22,7 @@
 		"know-more-description": "I took the liberty of asking Robin a few questions straight away. Let's find out who's behind this portfolio!",
 		"see-answer": "See the answer",
 		"question-1": "What type of career opportunity are you looking for?",
-		"answer-1": "I'm looking for a job as a front-end or fullstack developer (React/NextJs/Typescript/Symfony). But I'm open to other technologies (Angular/VueJs/NodeJS) if I'm offered the opportunity to train in them!",
+		"answer-1": "I'm looking for a job as a front-end or fullstack developer (React/NextJs/Typescript/Symfony/Node.js). But I'm open to other technologies (Angular/Vue.js) if I'm offered the opportunity to train in them!",
 		"question-2": "Okay top! And if you had a choice of several opportunities, what criteria would you use to make your choice?",
 		"answer-2": "My first criterion is the type of project! I'm looking for a big, challenging project to push my limits and grow! (My portfolio is a nod to SaaS projects). And if there's the possibility of working/evolving full-time or part-time 4 days a week for me, that's the jackpot!",
 		"question-3": "Very good, we can see that you know what you want! Do you have any hobbies outside work?",
@@ -67,7 +67,6 @@
 
 	"ExperiencesPage": {
 		"his-experiences": "His experiences",
-		"front-end-developper": "Front-End Developper",
 		"fullstack-developper": "Fullstack Developper",
 		"fullstack-web-developper": "Fullstack Web Developper",
 		"junior-web-developper": "Junior Web Developper",
@@ -76,7 +75,7 @@
 		"december2020-to-december2021": "December 2020 to December 2021",
 		"january2019-to-july2020": "January 2019 to July 2020",
 		"self-employed-contractor": "Self-Employed contractor",
-		"front-end-developper-experience": "He developed his own business in energy healing and therapeutic music. He trained himself and created his own website with NextJS to make it modern, intuitive and efficient for users.",
+		"front-end-developper-experience": "He has trained in NextJS, Node.js, Express.js, mongoDB and has created two websites with a modern, intuitive, high-performance look and feel for users. At the same time, he developed his own business in energy healing and music.",
 		"fullstack-developper-experience": "He started out as an alternating front-end developer (Twig, JS, jQuery, SCSS), then moved on to a permanent contract as a fullstack developer (React/Typescript and Symfony).",
 		"fullstack-web-developper-experience": "He strengthened his knowledge of Symfony, then learned React and used it to redesign the software of the company where he was a work-study student.",
 		"junior-web-developper-experience": "He created 5 website projects during his online training. Mock-up integration, creation of a Wordpress site, creation of a dynamic site in JS with API integration, creation of a blog in PHP and JS, then a redesign of a basketball club site in Symfony.",

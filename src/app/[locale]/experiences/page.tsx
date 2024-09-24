@@ -22,11 +22,11 @@ const ExperiencePage = () => {
 				<p className="mt-2">{t("career-path")}</p>
 			</div>
 			<ExperienceCard
-				title={t("front-end-developper")}
+				title={t("fullstack-developper")}
 				dates={t("july2023-to-today")}
 				location={t("self-employed-contractor")}
 				type="company"
-				technos="NextJS, React, TypeScript, Tailwind"
+				technos="NextJS, React, TypeScript, Tailwind, Node.js, Express.js, MongoDB, Mongoose, EJS"
 				description={t("front-end-developper-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
