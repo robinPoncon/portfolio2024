@@ -4,6 +4,7 @@ import "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 import { ChartOptions } from "chart.js";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 
 type BarChartProps = {
 	title: string;
@@ -13,14 +14,31 @@ type BarChartProps = {
 
 const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	const { resolvedTheme } = useTheme();
+	const t = useTranslations("Chart");
+
+	// Convertir les niveaux de maîtrise en pourcentages
+	const transformedData = datasLabels.map((level) => {
+		switch (level) {
+			case 1:
+				return 25; // Notions - 25%
+			case 2:
+				return 50; // Intermédiaire - 50%
+			case 3:
+				return 75; // Avancé - 75%
+			case 4:
+				return 100; // Expert - 100%
+			default:
+				return 0;
+		}
+	});
 
 	const data = {
-		labels: labels,
+		labels: labels, // Technologies sur l'axe X
 		datasets: [
 			{
 				label: title,
-				data: datasLabels,
-				backgroundColor: ["#988ce3"],
+				data: transformedData,
+				backgroundColor: "#988ce3",
 				borderWidth: 0,
 				borderRadius: 4
 			}
@@ -28,11 +46,30 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	};
 
 	const options: ChartOptions<"bar"> = {
-		indexAxis: "y" as const,
+		indexAxis: "x", // Barres horizontales avec axe Y pour les niveaux
 		maintainAspectRatio: false,
 		scales: {
 			y: {
 				ticks: {
+					stepSize: 25, // Espacement pour chaque niveau (25% à 100%)
+					callback: function (tickValue: string | number) {
+						// Vérifier si la valeur est un nombre avant d'appliquer le mapping
+						if (typeof tickValue === "number") {
+							switch (tickValue) {
+								case 25:
+									return t("notions");
+								case 50:
+									return t("intermediate");
+								case 75:
+									return t("advanced");
+								case 100:
+									return t("expert");
+								default:
+									return "";
+							}
+						}
+						return ""; // Par défaut, retourne une chaîne vide
+					},
 					color: resolvedTheme === "dark" ? "#e4e5f1" : "#121212",
 					font: {
 						weight: "bold"
@@ -44,15 +81,11 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 			},
 			x: {
 				ticks: {
-					callback: function (value: string | number) {
-						return `${value}%`;
-					},
 					color: resolvedTheme === "dark" ? "#e4e5f1" : "#121212",
 					font: {
 						weight: "bold"
 					}
 				},
-				max: 100,
 				grid: {
 					color: resolvedTheme === "dark" ? "#4b5563" : "#d1d5db"
 				}
@@ -61,7 +94,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 		plugins: {
 			legend: {
 				position: "top",
-				align: "start",
+				align: "center",
 				labels: {
 					color: resolvedTheme === "dark" ? "#e4e5f1" : "#121212",
 					font: {
@@ -82,4 +115,5 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 		</div>
 	);
 };
+
 export default HorizontalBarChart;

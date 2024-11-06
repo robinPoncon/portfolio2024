@@ -14,6 +14,7 @@
 		"fullstack-developper": "Fullstack Developper",
 		"experience": "Experience",
 		"year": "years",
+		"main-technos": "Main technos",
 		"see-his-skills": "See his skills",
 		"number-of-projects": "Number of projects completed",
 		"see-his-github": "See his github",
@@ -180,5 +181,12 @@
 		"hey-im-devobot": "Hi, it's Devobot !",
 		"you-are-lost": "It seems you've lost your way in a parallel universe! Click on the button below to return to your previous destination.",
 		"back": "Back Home"
+	},
+
+	"Chart": {
+		"notions": "Notions",
+		"intermediate": "Intermediate",
+		"advanced": "Advanced",
+		"expert": "Expert"
 	}
 }

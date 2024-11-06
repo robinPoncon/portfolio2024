@@ -117,10 +117,9 @@ export default function Home() {
 							<span className="italic">5 {t("year")}</span>
 						</p>
 						<p>
-							<strong>Technos :</strong>{" "}
+							<strong>{t("main-technos")} :</strong>{" "}
 							<span className="italic">
-								NextJS, React, Typescript, JavaScript, Node.js, Express.js, MongoDB,
-								Mongoose, Tailwind, HTML5, SCSS, Symfony, PHP, MySQL, Twig, EJS
+								NextJS, React, Typescript, JavaScript, Node.js, Symfony
 							</span>
 						</p>
 						<Link

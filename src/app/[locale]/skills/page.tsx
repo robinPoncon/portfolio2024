@@ -58,10 +58,15 @@ const SkillsPage = () => {
 				<p className="mt-2">{t("check-his-skills")}</p>
 			</div>
 			<article className="flex flex-col gap-10 md:w-4/5 md:mx-auto">
-				<HorizontalBarChart
+				{/* <HorizontalBarChart
 					title={t("programming-languages-expertise")}
 					labels={["HTML5", "CSS3", "SCSS", "JavaScript", "TypeScript", "PHP"]}
 					datasLabels={[90, 90, 80, 75, 50, 50]}
+				/> */}
+				<HorizontalBarChart
+					title={t("programming-languages-expertise")}
+					labels={["HTML5", "CSS3", "SCSS", "JavaScript", "TypeScript", "PHP"]}
+					datasLabels={[4, 4, 4, 3, 2, 2]}
 				/>
 				<HorizontalBarChart
 					title={t("frameworks-expertise")}
@@ -75,7 +80,7 @@ const SkillsPage = () => {
 						"Twig",
 						"Symfony"
 					]}
-					datasLabels={[80, 70, 70, 40, 40, 40, 60, 60]}
+					datasLabels={[4, 3, 3, 1, 1, 3, 3, 2]}
 				/>
 				<HorizontalBarChart
 					title={t("tools-expertise")}
@@ -89,7 +94,7 @@ const SkillsPage = () => {
 						"Mongoose",
 						"MySQL"
 					]}
-					datasLabels={[40, 50, 60, 50, 60, 40, 50, 40]}
+					datasLabels={[2, 2, 3, 3, 4, 1, 1, 2]}
 				/>
 			</article>
 

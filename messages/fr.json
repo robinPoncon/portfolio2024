@@ -14,6 +14,7 @@
 		"fullstack-developper": "Développeur Fullstack",
 		"experience": "Expérience",
 		"year": "ans",
+		"main-technos": "Technos principales",
 		"see-his-skills": "Voir ses compétences",
 		"number-of-projects": "Nombre de projets réalisés",
 		"see-his-github": "Voir son github",
@@ -180,5 +181,12 @@
 		"hey-im-devobot": "Salut, C'est Devobot !",
 		"you-are-lost": "Il semblerait que vous vous soyez égaré dans un univers parallèle ! Cliquez sur le bouton ci-dessous pour revenir dans un univers connu.",
 		"back": "Retour à l'accueil"
+	},
+
+	"Chart": {
+		"notions": "Notions",
+		"intermediate": "Intermédiaire",
+		"advanced": "Avancé",
+		"expert": "Expert"
 	}
 }
