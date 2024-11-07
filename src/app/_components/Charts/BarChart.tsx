@@ -16,7 +16,6 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	const { resolvedTheme } = useTheme();
 	const t = useTranslations("Chart");
 
-	// Convertir les niveaux de maîtrise en pourcentages
 	const transformedData = datasLabels.map((level) => {
 		switch (level) {
 			case 1:
@@ -33,7 +32,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	});
 
 	const data = {
-		labels: labels, // Technologies sur l'axe X
+		labels: labels,
 		datasets: [
 			{
 				label: title,
@@ -46,14 +45,13 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 	};
 
 	const options: ChartOptions<"bar"> = {
-		indexAxis: "x", // Barres horizontales avec axe Y pour les niveaux
+		indexAxis: "x",
 		maintainAspectRatio: false,
 		scales: {
 			y: {
 				ticks: {
 					stepSize: 25, // Espacement pour chaque niveau (25% à 100%)
 					callback: function (tickValue: string | number) {
-						// Vérifier si la valeur est un nombre avant d'appliquer le mapping
 						if (typeof tickValue === "number") {
 							switch (tickValue) {
 								case 25:
@@ -68,7 +66,7 @@ const HorizontalBarChart = ({ title, labels, datasLabels }: BarChartProps) => {
 									return "";
 							}
 						}
-						return ""; // Par défaut, retourne une chaîne vide
+						return "";
 					},
 					color: resolvedTheme === "dark" ? "#e4e5f1" : "#121212",
 					font: {
