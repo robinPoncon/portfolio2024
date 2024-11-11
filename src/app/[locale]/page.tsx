@@ -103,7 +103,7 @@ export default function Home() {
 					<Image
 						className="scale-x-[-1] rounded-t-[4px] md:rounded-tl-none md:rounded-tr-[4px] md:rounded-br-[4px]"
 						alt="picture of robin"
-						src="/images/photo_robin.png"
+						src="/images/photo_robinV2.png"
 						width={256}
 						height={256}
 					/>
