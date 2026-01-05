@@ -33,21 +33,21 @@ export default function Home() {
 			answer: `"${t("answer-3")}"`,
 			isAnswerVisible: false,
 			srcIcon: "/icons/arrowDown_icon_black.svg"
-		},
-		{
-			id: 4,
-			question: t("question-4"),
-			answer: `"${t("answer-4")}"`,
-			isAnswerVisible: false,
-			srcIcon: "/icons/arrowDown_icon_black.svg"
-		},
-		{
-			id: 5,
-			question: t("question-5"),
-			answer: `"${t("answer-5")}"`,
-			isAnswerVisible: false,
-			srcIcon: "/icons/arrowDown_icon_black.svg"
 		}
+		// {
+		// 	id: 4,
+		// 	question: t("question-4"),
+		// 	answer: `"${t("answer-4")}"`,
+		// 	isAnswerVisible: false,
+		// 	srcIcon: "/icons/arrowDown_icon_black.svg"
+		// },
+		// {
+		// 	id: 5,
+		// 	question: t("question-5"),
+		// 	answer: `"${t("answer-5")}"`,
+		// 	isAnswerVisible: false,
+		// 	srcIcon: "/icons/arrowDown_icon_black.svg"
+		// }
 	]);
 
 	const switchSrcIcon = (iconColor: string, id: number | null) => {
@@ -110,11 +110,11 @@ export default function Home() {
 					<div className="p-5 my-auto bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-5">
 						<p>
 							<strong>{t("job")} :</strong>{" "}
-							<span className="italic">{t("fullstack-developper")}</span>
+							<span className="italic">{t("frontend-engineer")}</span>
 						</p>
 						<p>
 							<strong>{t("experience")} :</strong>{" "}
-							<span className="italic">5 {t("year")}</span>
+							<span className="italic">4 {t("year")}</span>
 						</p>
 						<p>
 							<strong>{t("main-technos")} :</strong>{" "}
@@ -173,7 +173,7 @@ export default function Home() {
 					</h2>
 					<div className="flex justify-center gap-10 mt-5">
 						<a
-							href="/CV_Robin-Poncon_2024.pdf"
+							href="/CV_Robin-Poncon_2026.pdf"
 							className="customCSS-BtnDownload flex gap-1 justify-center w-fit mx-auto hover:text-customVioletLighter"
 							download="CV_Robin-Poncon.pdf"
 						>

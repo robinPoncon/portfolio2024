@@ -88,7 +88,7 @@ const Footer = () => {
 							</a>
 						</p>
 						<a
-							href="/CV_Robin-Poncon_2024.pdf"
+							href="/CV_Robin-Poncon_2026.pdf"
 							className="customCSS-BtnDownload flex gap-1 justify-center w-fit mx-auto hover:text-customVioletLighter"
 							download="CV_Robin-Poncon.pdf"
 						>
