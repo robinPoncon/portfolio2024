@@ -110,7 +110,7 @@ export default function Home() {
 					<div className="p-5 my-auto bg-lighterBg dark:bg-greyBg rounded-b-[4px] md:rounded-l-[4px] md:p-5">
 						<p>
 							<strong>{t("job")} :</strong>{" "}
-							<span className="italic">{t("frontend-engineer")}</span>
+							<span className="italic">{t("job-title")}</span>
 						</p>
 						<p>
 							<strong>{t("experience")} :</strong>{" "}

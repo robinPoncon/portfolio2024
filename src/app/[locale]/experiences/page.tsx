@@ -22,39 +22,39 @@ const ExperiencePage = () => {
 				<p className="mt-2">{t("career-path")}</p>
 			</div>
 			<ExperienceCard
-				title={t("fullstack-developper")}
+				title={t("fullstack-developer")}
 				dates={t("july2023-to-today")}
 				location={t("self-employed-contractor")}
 				type="company"
 				technos="NextJS, React, TypeScript, Tailwind, Node.js, Express.js, MongoDB, Mongoose, EJS"
-				description={t("front-end-developper-experience")}
+				description={t("front-end-developer-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
-				title={t("fullstack-developper")}
+				title={t("fullstack-developer")}
 				dates={t("february2021-to-july2023")}
 				location="SOAN"
 				type="company"
 				technos="React, Symfony, Typescript, SCSS, jQuery, Javascript, Twig"
-				description={t("fullstack-developper-experience")}
+				description={t("fullstack-developer-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
-				title={t("fullstack-web-developper")}
+				title={t("fullstack-web-developer")}
 				dates={t("december2020-to-december2021")}
 				location="3W Academy"
 				type="formation"
 				technos="React, Symfony, SCSS, jQuery, Javascript, Twig"
-				description={t("fullstack-web-developper-experience")}
+				description={t("fullstack-web-developer-experience")}
 			/>
 			<p className="h-20 bg-customViolet w-[6px] mx-auto -my-20" />
 			<ExperienceCard
-				title={t("junior-web-developper")}
+				title={t("junior-web-developer")}
 				dates={t("january2019-to-july2020")}
 				location="Openclassrooms"
 				type="formation"
 				technos="Symfony, PHP, Twig, JavaScript, jQuery, HTML5, CSS3"
-				description={t("junior-web-developper-experience")}
+				description={t("junior-web-developer-experience")}
 			/>
 		</section>
 	);
